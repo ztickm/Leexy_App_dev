@@ -66,7 +66,7 @@ public final class OcrCaptureActivity extends AppCompatActivity {
 
     // Permission request codes need to be < 256
     private static final int RC_HANDLE_CAMERA_PERM = 2;
-
+    private static final int CALL_PERM =111;
     // Constants used to pass extra data in the intent
     public static final String AutoFocus = "AutoFocus";
     public static final String UseFlash = "UseFlash";
@@ -135,6 +135,7 @@ public final class OcrCaptureActivity extends AppCompatActivity {
      * showing a "Snackbar" message of why the permission is needed then
      * sending the request.
      */
+
     private void requestCameraPermission() {
         Log.w(TAG, "Camera permission is not granted. Requesting permission");
 
@@ -157,6 +158,32 @@ public final class OcrCaptureActivity extends AppCompatActivity {
         };
 
         Snackbar.make(mGraphicOverlay, R.string.permission_camera_rationale,
+                Snackbar.LENGTH_INDEFINITE)
+                .setAction(R.string.ok, listener)
+                .show();
+    }
+    private void requestPhonePermission() {
+        Log.w(TAG, " Call permission is not granted. Requesting permission");
+
+        final String[] permissions = new String[]{Manifest.permission.CALL_PHONE};
+
+        if (!ActivityCompat.shouldShowRequestPermissionRationale(this,
+                Manifest.permission.CALL_PHONE)) {
+            ActivityCompat.requestPermissions(this, permissions, CALL_PERM);
+            return;
+        }
+
+        final Activity thisActivity = this;
+
+        View.OnClickListener listener = new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ActivityCompat.requestPermissions(thisActivity, permissions,
+                        CALL_PERM);
+            }
+        };
+
+        Snackbar.make(mGraphicOverlay, "Call permission !",
                 Snackbar.LENGTH_INDEFINITE)
                 .setAction(R.string.ok, listener)
                 .show();
@@ -277,35 +304,73 @@ public final class OcrCaptureActivity extends AppCompatActivity {
     public void onRequestPermissionsResult(int requestCode,
                                            @NonNull String[] permissions,
                                            @NonNull int[] grantResults) {
-        if (requestCode != RC_HANDLE_CAMERA_PERM) {
-            Log.d(TAG, "Got unexpected permission result: " + requestCode);
-            super.onRequestPermissionsResult(requestCode, permissions, grantResults);
-            return;
-        }
 
-        if (grantResults.length != 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-            Log.d(TAG, "Camera permission granted - initialize the camera source");
-            // we have permission, so create the camerasource
-            boolean autoFocus = getIntent().getBooleanExtra(AutoFocus, false);
-            boolean useFlash = getIntent().getBooleanExtra(UseFlash, false);
-            createCameraSource(autoFocus, useFlash);
-            return;
-        }
+        switch (requestCode) {
+            case CALL_PERM: {
+                if ( grantResults.length != 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
 
-        Log.e(TAG, "Permission not granted: results len = " + grantResults.length +
-                " Result code = " + (grantResults.length > 0 ? grantResults[0] : "(empty)"));
+                    // permission was granted, yay! do the
 
-        DialogInterface.OnClickListener listener = new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialog, int id) {
-                finish();
+
+                } else {
+
+                    DialogInterface.OnClickListener listener = new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int id) {
+                            finish();
+
+                        }
+                    };
+
+                    AlertDialog.Builder builder = new AlertDialog.Builder(this);
+                    builder.setTitle("Call ")
+                            .setMessage("Permission for make call not granted ")
+                            .setPositiveButton(R.string.ok, listener)
+                            .show();
+
+                }
+                return;
             }
-        };
 
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("Multitracker sample")
-                .setMessage(R.string.no_camera_permission)
-                .setPositiveButton(R.string.ok, listener)
-                .show();
+            case RC_HANDLE_CAMERA_PERM:{
+
+                if (grantResults.length != 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                    Log.d(TAG, "Camera permission granted - initialize the camera source");
+                    // we have permission, so create the camerasource
+                    boolean autoFocus = getIntent().getBooleanExtra(AutoFocus, false);
+                    boolean useFlash = getIntent().getBooleanExtra(UseFlash, false);
+                    createCameraSource(autoFocus, useFlash);
+                    return;
+                }
+
+                Log.e(TAG, "Permission not granted: results len = " + grantResults.length +
+                        " Result code = " + (grantResults.length > 0 ? grantResults[0] : "(empty)"));
+
+                DialogInterface.OnClickListener listener = new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        finish();
+                    }
+                };
+
+                AlertDialog.Builder builder = new AlertDialog.Builder(this);
+                builder.setTitle("Multitracker sample")
+                        .setMessage(R.string.no_camera_permission)
+                        .setPositiveButton(R.string.ok, listener)
+                        .show();
+
+            }
+            default:{
+                Log.d(TAG, "Got unexpected permission result: " + requestCode);
+                super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+                return;
+            }
+
+            // other 'switch' lines to check for other
+            // permissions this app might request
+        }
+
+
+
+
     }
 
     /**
@@ -393,21 +458,22 @@ public final class OcrCaptureActivity extends AppCompatActivity {
         Intent callIntent = new Intent(Intent.ACTION_CALL);
         Log.d("TEXTVALUE",textValue);
         callIntent.setData(Uri.parse("tel:"+ Uri.encode(textValue)));
+        callIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
-            // TODO: Consider upgrading to new permissions system
-            // TODO: Consider calling
-            //    ActivityCompat#requestPermissions
-            // here to request the missing permissions, and then overriding
-            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
-            //                                          int[] grantResults)
-            // to handle the case where the user grants the permission. See the documentation
-            // for ActivityCompat#requestPermissions for more details.
+
             Log.e(TAG, "Permission");
+
+            requestPhonePermission();
+            //requestPermissions(new String[]{Manifest.permission.CALL_PHONE}, CALL_PERM);
+           // return;
+
         }else{
         startActivity(callIntent);
         }
     }
+
+
 
     private class CaptureGestureListener extends GestureDetector.SimpleOnGestureListener {
 

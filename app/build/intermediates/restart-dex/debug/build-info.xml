@@ -1,35 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
+    abi="armeabi-v7a,armeabi"
     api-level="23"
     density="xxhdpi"
     format="8"
-    plugin-version="2.2.0"
-    timestamp="345199933158568"
-    token="-5560814078582311786"
-    verifier="MANIFEST_FILE_CHANGE" >
+    plugin-version="2.2.1"
+    timestamp="25007346903115"
+    token="-6930143930039481735"
+    verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="1057" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="301" />
     <task
         name="verifier"
-        duration="0" />
+        duration="11" />
 
     <artifact
-        location="D:\Dev\Mobile\Leexy_App\app\build\outputs\apk\app-debug.apk"
+        location="/home/ilyes/AndroidStudioProjects/Leexy_App/app/build/outputs/apk/app-debug.apk"
         type="MAIN" />
 
     <build
-        timestamp="345199933158568"
-        verifier="MANIFEST_FILE_CHANGE" >
+        timestamp="25007346903115"
+        verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="D:\Dev\Mobile\Leexy_App\app\build\outputs\apk\app-debug.apk"
+            location="/home/ilyes/AndroidStudioProjects/Leexy_App/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
     </build>
 

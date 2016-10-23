@@ -1,7 +1,0 @@
-#Fri Oct 21 23:07:30 CET 2016
-base.0=/home/ilyes/AndroidStudioProjects/Leexy_App/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_ad0b71b95e392a1280c696b417a47ca4756e784d
-renamed.1=classes.dex
-renamed.0=classes2.dex
-file.1=/home/ilyes/AndroidStudioProjects/Leexy_App/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_0e81ea26fd0c282e44cef6019aa9f07ae78168b5/classes.dex
-base.1=/home/ilyes/AndroidStudioProjects/Leexy_App/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_0e81ea26fd0c282e44cef6019aa9f07ae78168b5
-file.0=/home/ilyes/AndroidStudioProjects/Leexy_App/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_ad0b71b95e392a1280c696b417a47ca4756e784d/classes.dex

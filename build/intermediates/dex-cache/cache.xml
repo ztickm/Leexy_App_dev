@@ -3,210 +3,210 @@
 
     <item
         is-multidex="true"
-        jar="/home/ilyes/AndroidStudioProjects/Leexy_App/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="669ad5bfcb0efa5b39ae77f9a2485725eff1ece0">
-        <dex dex="/home/ilyes/AndroidStudioProjects/Leexy_App/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_0e81ea26fd0c282e44cef6019aa9f07ae78168b5/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/ilyes/AndroidStudioProjects/Leexy_App/app/build/intermediates/exploded-aar/com.android.support/design/24.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="23eb0d2998a782213b56168cbf23a0688b9111d9">
-        <dex dex="/home/ilyes/AndroidStudioProjects/Leexy_App/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-24.2.0_f2f2e6f2ca01673c50f9bb4ab20ba4014b9f3b4c/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/ilyes/AndroidStudioProjects/Leexy_App/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.4.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="618485fef3ebe12127f7622abbc9b5b39057b5c2">
-        <dex dex="/home/ilyes/AndroidStudioProjects/Leexy_App/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-9.4.0_2ef8377f481dd4b7c88ab19429655eb80e296de6/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/ilyes/AndroidStudioProjects/Leexy_App/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.4.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="3dee4ce5844d39d843d503fb8fe04e51e5bfffac">
-        <dex dex="/home/ilyes/AndroidStudioProjects/Leexy_App/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-base-9.4.0_6c80397e24bae8e2609c03d807bc362414e96535/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/ilyes/AndroidStudioProjects/Leexy_App/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="d8bd2268fdcbfd52c76ade65d9900cd8def93a44">
-        <dex dex="/home/ilyes/AndroidStudioProjects/Leexy_App/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-24.2.0_73871d1d4739b50731fd997a6bac3ed17c82224b/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/ilyes/AndroidStudioProjects/Leexy_App/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="ceca632b19221193b8f7a9e38fdbf3526bceeba8">
-        <dex dex="/home/ilyes/AndroidStudioProjects/Leexy_App/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_ad0b71b95e392a1280c696b417a47ca4756e784d/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/ilyes/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/24.2.0/support-annotations-24.2.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="6be858a75633b1f0a2d24cad740db57775cb6871">
-        <dex dex="/home/ilyes/AndroidStudioProjects/Leexy_App/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.2.0_10bd5b6b86a38f9e87d0a260adfbc882268e6c3e/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/ilyes/AndroidStudioProjects/Leexy_App/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.0/jars/libs/internal_impl-24.2.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="045be695d968dd707691cc55d23746dbf8cf569a">
-        <dex dex="/home/ilyes/AndroidStudioProjects/Leexy_App/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.0_9b5cc42c4a4fe866749a063942bec2cb4856b489/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/ilyes/AndroidStudioProjects/Leexy_App/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="6eb9107eb34d2fe2b020662b7fbbec991dcba846">
-        <dex dex="/home/ilyes/AndroidStudioProjects/Leexy_App/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-24.2.0_3ac42d62ba6dde049f3ca79d29843e6983164bc2/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/ilyes/AndroidStudioProjects/Leexy_App/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="beac40bcc8a320a896dd15f5109cfcaea5e1e0e3">
-        <dex dex="/home/ilyes/AndroidStudioProjects/Leexy_App/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-24.2.0_e6af0e05535f61051d8325058549c1417a60ea33/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/ilyes/AndroidStudioProjects/Leexy_App/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.0/jars/libs/internal_impl-24.2.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="6e02e34594ebe9c0501ffda8dd48497f81b82977">
-        <dex dex="/home/ilyes/AndroidStudioProjects/Leexy_App/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.0_2d0316f68dee6d92376ed2a07c136975a4d28692/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/ilyes/AndroidStudioProjects/Leexy_App/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/24.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="c755536e5a100d9c76c8ea0b72f76c018f7a9de2">
-        <dex dex="/home/ilyes/AndroidStudioProjects/Leexy_App/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-24.2.0_d7f5823561b9af7a09366bcf64e25a3f670ecbea/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/ilyes/AndroidStudioProjects/Leexy_App/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.0/jars/libs/internal_impl-24.2.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="032a4b53def5e2ceedfc2e793b126c0163cfa1dd">
-        <dex dex="/home/ilyes/AndroidStudioProjects/Leexy_App/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.0_9a1c039fa02179c75be4feb979108da095266eec/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/ilyes/AndroidStudioProjects/Leexy_App/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="f3ee23ef25c9a8fe3d40246d0b7097267963a612">
-        <dex dex="/home/ilyes/AndroidStudioProjects/Leexy_App/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-24.2.0_f475629328e24cfe0ffe3576b2ebb37c54c6b74a/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/ilyes/AndroidStudioProjects/Leexy_App/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.0/jars/libs/internal_impl-24.2.0.jar"
+        jar="D:\Dev\Mobile\Leexy_App\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.0\jars\libs\internal_impl-24.2.0.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
         sha1="60d7b23621d31e6f42f4f76f16af467e57a20cda">
-        <dex dex="/home/ilyes/AndroidStudioProjects/Leexy_App/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.0_e6653b75ec5d72f99539f4f4a43df2ba3c6ced3b/classes.dex" />
+        <dex dex="D:\Dev\Mobile\Leexy_App\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.0_d44c61ffe0ee5844051b71148cfdb37fff30e990\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/ilyes/AndroidStudioProjects/Leexy_App/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/jars/classes.jar"
+        jar="D:\Dev\Mobile\Leexy_App\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
-        sha1="f9b41622897665678d31d78e57a361cb0cebcb0d">
-        <dex dex="/home/ilyes/AndroidStudioProjects/Leexy_App/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-24.2.0_bccfc3516f1401e139ee5c7148d93d6009529277/classes.dex" />
+        sha1="6eb9107eb34d2fe2b020662b7fbbec991dcba846">
+        <dex dex="D:\Dev\Mobile\Leexy_App\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-24.2.0_fa2cd74d4d92fed09b3b72cc32c20d4d9b3ac793\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/ilyes/AndroidStudioProjects/Leexy_App/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/jars/libs/internal_impl-24.2.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="771b3cc0e597b54da25f8086ba73180c59c6bc71">
-        <dex dex="/home/ilyes/AndroidStudioProjects/Leexy_App/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.0_3fe0c5a6cf707e4923751e2d62c50a2dd7dd403b/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/ilyes/AndroidStudioProjects/Leexy_App/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="fcc945a86ebcbf527429acb8216ec7dae2c06417">
-        <dex dex="/home/ilyes/AndroidStudioProjects/Leexy_App/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-24.2.0_b8a4172280b9a2c15d9f4934c4526e6d169d4df0/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/ilyes/AndroidStudioProjects/Leexy_App/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/jars/classes.jar"
+        jar="D:\Dev\Mobile\Leexy_App\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
         sha1="c3c638be6e650b165ab9ae144857b64e82787fad">
-        <dex dex="/home/ilyes/AndroidStudioProjects/Leexy_App/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-24.2.0_2c910ef39a00634dfdbf096af73a8292cc7aa4f8/classes.dex" />
+        <dex dex="D:\Dev\Mobile\Leexy_App\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-24.2.0_53829334eec742c42410407257c91d9c521f2955\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/ilyes/AndroidStudioProjects/Leexy_App/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.4.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="8a36d229011e75f0caef408e1adf0d3fd4d94e02">
-        <dex dex="/home/ilyes/AndroidStudioProjects/Leexy_App/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tasks-9.4.0_57f1f61db35148c2ce7acae57c4eba98600892a7/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/ilyes/AndroidStudioProjects/Leexy_App/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="c84e216d9bf618464d6b9564d71d9a656433e7c4">
-        <dex dex="/home/ilyes/AndroidStudioProjects/Leexy_App/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-24.2.0_650476d76002875b4652d8fd7f5513da5721bf14/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/ilyes/AndroidStudioProjects/Leexy_App/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-vision/9.4.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="670df81539ab71918d49b186598b7eff08ef6563">
-        <dex dex="/home/ilyes/AndroidStudioProjects/Leexy_App/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-vision-9.4.0_9a115afa835f20e71a181f0b8d2179fa636d0c30/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/ilyes/AndroidStudioProjects/Leexy_App/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.0/jars/classes.jar"
+        jar="D:\Dev\Mobile\Leexy_App\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
         sha1="45f5eda279825ff470e3f51019d374d1ef61e000">
-        <dex dex="/home/ilyes/AndroidStudioProjects/Leexy_App/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.2.0_bcbfcd1a79ac714590198d151050db9907e9593f/classes.dex" />
+        <dex dex="D:\Dev\Mobile\Leexy_App\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-24.2.0_2c390f7b6f087a2190c81b11b7dc518c5ef579c1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Dev\Mobile\Leexy_App\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="c755536e5a100d9c76c8ea0b72f76c018f7a9de2">
+        <dex dex="D:\Dev\Mobile\Leexy_App\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-24.2.0_bd6ded03fc589f1f574385f8dfa4a0f6efde7daf\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Dev\Mobile\Leexy_App\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="3dee4ce5844d39d843d503fb8fe04e51e5bfffac">
+        <dex dex="D:\Dev\Mobile\Leexy_App\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-base-9.4.0_c57ae54beeb60b268b7228b78ae8da96f5dd0a6b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Dev\Mobile\Leexy_App\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="ff9d4aa0690385a5c5465c5cc87e336f36323e6b">
+        <dex dex="D:\Dev\Mobile\Leexy_App\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_a39064f26ade9f6955bbe3ddf5897fe1426d1975\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Dev\Mobile\Leexy_App\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="beac40bcc8a320a896dd15f5109cfcaea5e1e0e3">
+        <dex dex="D:\Dev\Mobile\Leexy_App\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-24.2.0_01c941418f9856f0091bf1e02999d5908140dcd6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Dev\Mobile\Leexy_App\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.0\jars\libs\internal_impl-24.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="771b3cc0e597b54da25f8086ba73180c59c6bc71">
+        <dex dex="D:\Dev\Mobile\Leexy_App\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.0_f65b9b1fc6aabc29ee46fb284845c8a082e4ac46\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Salim\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\24.2.0\support-annotations-24.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="6be858a75633b1f0a2d24cad740db57775cb6871">
+        <dex dex="D:\Dev\Mobile\Leexy_App\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-24.2.0_13b4d1fe5dafbbabfbe9dd4dfc28d204381cf834\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Dev\Mobile\Leexy_App\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="fcc945a86ebcbf527429acb8216ec7dae2c06417">
+        <dex dex="D:\Dev\Mobile\Leexy_App\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-24.2.0_a727b1c02519fd11c44690b40f8c87c174c3ce10\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Dev\Mobile\Leexy_App\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.0\jars\libs\internal_impl-24.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="045be695d968dd707691cc55d23746dbf8cf569a">
+        <dex dex="D:\Dev\Mobile\Leexy_App\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.0_b2e263cc7874dd7bdb28e681089ddbc0c49a03ea\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Dev\Mobile\Leexy_App\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.0\jars\libs\internal_impl-24.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="6e02e34594ebe9c0501ffda8dd48497f81b82977">
+        <dex dex="D:\Dev\Mobile\Leexy_App\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.0_ca1c9bc5938138898183ffa91a81b1529524504d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Dev\Mobile\Leexy_App\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="8a36d229011e75f0caef408e1adf0d3fd4d94e02">
+        <dex dex="D:\Dev\Mobile\Leexy_App\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-tasks-9.4.0_35182028c09f1b76669bc6246213fc44f59a0ea3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Dev\Mobile\Leexy_App\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="b25d172e065c6ddc103f92396b0010776767a9a7">
+        <dex dex="D:\Dev\Mobile\Leexy_App\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_ac854400f3b8e196d4a23da191f63179610c3b2b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Dev\Mobile\Leexy_App\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="f9b41622897665678d31d78e57a361cb0cebcb0d">
+        <dex dex="D:\Dev\Mobile\Leexy_App\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-24.2.0_e0d3af3ddf29f8a9b6936b59219f1d05dc4e4743\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Dev\Mobile\Leexy_App\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-vision\9.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="670df81539ab71918d49b186598b7eff08ef6563">
+        <dex dex="D:\Dev\Mobile\Leexy_App\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-vision-9.4.0_2975c0c97427c686ccaec168ed9833f413e3bcb3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Dev\Mobile\Leexy_App\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="f3ee23ef25c9a8fe3d40246d0b7097267963a612">
+        <dex dex="D:\Dev\Mobile\Leexy_App\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-24.2.0_3be5acc64b4616eb70bc994de30d31ab71078ea3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Dev\Mobile\Leexy_App\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="c84e216d9bf618464d6b9564d71d9a656433e7c4">
+        <dex dex="D:\Dev\Mobile\Leexy_App\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-24.2.0_94ccf132e72a59886b07261e1863147856901a08\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Dev\Mobile\Leexy_App\app\build\intermediates\exploded-aar\com.android.support\design\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="23eb0d2998a782213b56168cbf23a0688b9111d9">
+        <dex dex="D:\Dev\Mobile\Leexy_App\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-24.2.0_e8adb87ca2b9cf808beafe37364d948454a41bb1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Dev\Mobile\Leexy_App\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.0\jars\libs\internal_impl-24.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="032a4b53def5e2ceedfc2e793b126c0163cfa1dd">
+        <dex dex="D:\Dev\Mobile\Leexy_App\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.0_723dc35514c71aba8edc3cc0b3efee3583e47e5d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Dev\Mobile\Leexy_App\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="618485fef3ebe12127f7622abbc9b5b39057b5c2">
+        <dex dex="D:\Dev\Mobile\Leexy_App\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-basement-9.4.0_3b652c88833adb154e61d54176fbc35efb09ccea\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Dev\Mobile\Leexy_App\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="d8bd2268fdcbfd52c76ade65d9900cd8def93a44">
+        <dex dex="D:\Dev\Mobile\Leexy_App\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-24.2.0_c5a7faf151382393cde7d6b7f38f3d99c2a5f9da\classes.dex" />
     </item>
 
 </items>

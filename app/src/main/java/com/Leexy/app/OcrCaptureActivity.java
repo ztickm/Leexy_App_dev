@@ -52,6 +52,7 @@ import com.google.android.gms.vision.text.TextRecognizer;
 
 import java.io.IOException;
 import java.util.Locale;
+import java.util.regex.Pattern;
 
 /**
  * Activity for the Ocr Detecting app.  This app detects text and displays the value with the
@@ -100,12 +101,28 @@ public final class OcrCaptureActivity extends AppCompatActivity {
 
         // Check for the camera permission before accessing the camera.  If the
         // permission is not granted yet, request permission.
-        int rc = ActivityCompat.checkSelfPermission(this, Manifest.permission.CAMERA);
-        if (rc == PackageManager.PERMISSION_GRANTED) {
+        int cameraPermissionState = ActivityCompat.checkSelfPermission(this, Manifest.permission.CAMERA);
+        if (cameraPermissionState == PackageManager.PERMISSION_GRANTED) {
+            Log.d("OnCreate", "Camera Permission granted creating CameraSource and checking phone permissions");
             createCameraSource(autoFocus, useFlash);
+
+            int phonePermissionState = ActivityCompat.checkSelfPermission(this, Manifest.permission.CALL_PHONE);
+            if (phonePermissionState != PackageManager.PERMISSION_GRANTED) {
+                Log.d("OnCreateCameraON", "Phone Permission not granted, requesting");
+                requestPhonePermission();
+            }
+
         } else {
+            Log.d("OnCreate", "Camera Permission not granted, requesting");
             requestCameraPermission();
+            int phonePermissionState = ActivityCompat.checkSelfPermission(this, Manifest.permission.CALL_PHONE);
+            if (phonePermissionState != PackageManager.PERMISSION_GRANTED) {
+                Log.d("OnCreateCameraOFF", "Phone Permission not granted, requesting");
+                requestPhonePermission();
+            }
         }
+
+
 
         gestureDetector = new GestureDetector(this, new CaptureGestureListener());
         scaleGestureDetector = new ScaleGestureDetector(this, new ScaleListener());
@@ -162,6 +179,7 @@ public final class OcrCaptureActivity extends AppCompatActivity {
                 .setAction(R.string.ok, listener)
                 .show();
     }
+    //TODO add Javadoc
     private void requestPhonePermission() {
         Log.w(TAG, " Call permission is not granted. Requesting permission");
 
@@ -183,7 +201,7 @@ public final class OcrCaptureActivity extends AppCompatActivity {
             }
         };
 
-        Snackbar.make(mGraphicOverlay, "Call permission !",
+        Snackbar.make(mGraphicOverlay, "Call permission is necessary!",
                 Snackbar.LENGTH_INDEFINITE)
                 .setAction(R.string.ok, listener)
                 .show();
@@ -284,6 +302,7 @@ public final class OcrCaptureActivity extends AppCompatActivity {
         }
     }
 
+    //TODO Modify next Javadoc
     /**
      * Callback for the result from requesting permissions. This method
      * is invoked for every call on {@link #requestPermissions(String[], int)}.
@@ -309,7 +328,7 @@ public final class OcrCaptureActivity extends AppCompatActivity {
             case CALL_PERM: {
                 if ( grantResults.length != 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
 
-                    // permission was granted, yay! do the
+                    // permission was granted, yay!
 
 
                 } else {
@@ -364,8 +383,7 @@ public final class OcrCaptureActivity extends AppCompatActivity {
                 return;
             }
 
-            // other 'switch' lines to check for other
-            // permissions this app might request
+
         }
 
 
@@ -414,7 +432,13 @@ public final class OcrCaptureActivity extends AppCompatActivity {
         if (graphic != null) {
             text = graphic.getTextBlock();
             if (text != null && text.getValue() != null) {
-                callOperatorService(text);
+                boolean textIsValidRechargeCode = Pattern.matches("\\d{14}", text.getValue());
+                if (textIsValidRechargeCode){
+                    callOperatorService(text);
+                }
+                else{
+                    Log.d("REGEX","Detected text isn't a recharge code");
+                }
             }
             else {
                 Log.d(TAG, "text data is null");
@@ -426,25 +450,31 @@ public final class OcrCaptureActivity extends AppCompatActivity {
         return text != null;
     }
 
+    //TODO add Javadoc
     void  callOperatorService(TextBlock text){
         //TODO Clean the following code
+        String textValue = text.getValue();
+
         TelephonyManager telephonyManager = (TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE);
         String simOperatorName = telephonyManager.getSimOperatorName();
-        String textValue = text.getValue();
         switch (simOperatorName){
             case "mobilis" : {
-                //textValue = "*111*" + textValue + "#";
+                textValue = "*111*" + textValue + "#";
                 Snackbar.make(mGraphicOverlay, "Mobilis Detected",
                         Snackbar.LENGTH_LONG)
                         .show();
                 Log.d("OPER", "MOBILIS DETECTED");
                 break;
             }
-            case "Ooredoo" : {
-                textValue ="*200*" +  textValue + "#"; break;
+            case "ooredoo" : {
+                textValue ="*200*" +  textValue + "#";
+                Log.d("OPER", "OOREDOO DETECTED");
+                break;
             }
             case "djezzy" : {
-                textValue ="*700*" +  textValue + "#"; break;
+                textValue ="*700*" +  textValue + "#";
+                Log.d("OPER", "DJEZZY DETECTED");
+                break;
             }
             default: {
                 Log.d("OPER", "no operator detected" + simOperatorName);

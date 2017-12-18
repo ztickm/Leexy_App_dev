@@ -35,7 +35,7 @@ public class OcrGraphic extends GraphicOverlay.Graphic {
     private int mId;
 
     private static final int TEXT_COLOR = Color.WHITE;
-
+    private static final int BOX_COLOR = Color.RED;
     private static Paint sRectPaint;
     private static Paint sTextPaint;
     private final TextBlock mText;
@@ -47,7 +47,7 @@ public class OcrGraphic extends GraphicOverlay.Graphic {
 
         if (sRectPaint == null) {
             sRectPaint = new Paint();
-            sRectPaint.setColor(TEXT_COLOR);
+            sRectPaint.setColor(BOX_COLOR);
             sRectPaint.setStyle(Paint.Style.STROKE);
             sRectPaint.setStrokeWidth(4.0f);
         }

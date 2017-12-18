@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_activity_main">Leexy</string>
+    <string name="title_activity_settings">Réglages</string>
+    <string name="Call_permission_is_necessary">L\'autorisation de passer des appels est nécessaire</string>
+    <string name="Detected_text_isntrefillcode">Le texte détécté n\'est pas un code de recharge, essayez de scanner un code à 14 chiffres.</string>
+    <string name="Tap_rectangle_to_refill_your_account">Touchez le rectangle contenant le code pour recharger votre crédit prépayé.</string>
+    <string name="confirm_correct_refill_code_dialog">Veuillez confirmer que ceci est le bon code de recharge.</string>
+    <string name="ok">OK</string>
+    <string name="permissions_needed_title">Les permissions sont nécessaires!</string>
+    <string name="permissions_notgranted">Cette application ne peut pas s\'exécuter car elle ne dispose pas des autorisations Appel / Appareil photo. Veuillez activer ces autorisations à partir des paramètres de votre téléphone. L\'application va maintenant quitter.</string>
+    <string name="Cancel">Annuler</string>
+    <string name="Dismiss">OK</string>
+    <string name="No_valid_operator_detected">Aucun opérateur mobile valide détecté! Veuillez vérifier que vous avez une carte SIM connectée au réseau.</string>
+    <string name="low_storage_error">Les dépendances OCR ne peuvent pas être téléchargées en raison du faible stockage de l\'appareil.</string>
+    <string name="languages">Langages</string>
+    <string name="privacy_policy">Lisez notre <a href= https://docs.google.com/document/d/e/2PACX-1vSsVQxjQeJa36nNUdL8VioEj-SsBBAK-3COzfknjRY2lSl6uI5IeeIVs-D5DR0HqjhvyJczyIUnqj69/pub>politique de confidentialité</a>
+    <string name="email">E-mail</string>
+</resources>

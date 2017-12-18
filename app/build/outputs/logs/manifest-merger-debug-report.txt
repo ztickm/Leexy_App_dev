@@ -1,126 +1,350 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Dev\Mobile\Leexy_App\app\src\main\AndroidManifest.xml:2:1-36:12
+ADDED from /mnt/72E2CD59E2CD21E9/Dev/Mobile/Leexy_App/app/src/main/AndroidManifest.xml:2:1-69:12
+INJECTED from /mnt/72E2CD59E2CD21E9/Dev/Mobile/Leexy_App/app/src/main/AndroidManifest.xml:2:1-69:12
+INJECTED from /mnt/72E2CD59E2CD21E9/Dev/Mobile/Leexy_App/app/src/main/AndroidManifest.xml:2:1-69:12
+INJECTED from /mnt/72E2CD59E2CD21E9/Dev/Mobile/Leexy_App/app/src/main/AndroidManifest.xml:2:1-69:12
+MERGED from [com.mopub:mopub-sdk-banner:4.17.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/mopub-sdk-banner-4.17.0.aar/065abd30ee2b32d2fc089e98b99b8b53/AndroidManifest.xml:2:1-13:12
+MERGED from [com.android.support:design:26.1.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/55dbcc0b6f113a3e31b43953e3c8c4ca/AndroidManifest.xml:17:1-31:12
+MERGED from [com.mopub:mopub-sdk-base:4.17.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/mopub-sdk-base-4.17.0.aar/9639d309269e9894ed6c5b427310750e/AndroidManifest.xml:2:1-13:12
+MERGED from [com.google.android.gms:play-services-vision:11.6.2] /home/zticky/.gradle/caches/transforms-1/files-1.1/play-services-vision-11.6.2.aar/020cdc40bf86ee1b70d4a3043efc1035/AndroidManifest.xml:2:1-5:12
+MERGED from [com.google.android.gms:play-services-vision-common:11.6.2] /home/zticky/.gradle/caches/transforms-1/files-1.1/play-services-vision-common-11.6.2.aar/cb7a9940593e5e7e54dd7df6540e3b06/AndroidManifest.xml:2:1-5:12
+MERGED from [com.google.android.gms:play-services-base:11.6.2] /home/zticky/.gradle/caches/transforms-1/files-1.1/play-services-base-11.6.2.aar/03cd64eb63578ac7cd677b9f6033923a/AndroidManifest.xml:16:1-21:12
+MERGED from [com.google.android.gms:play-services-tasks:11.6.2] /home/zticky/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.6.2.aar/6bd4bc7e08ed0d39127caa76b6831a2b/AndroidManifest.xml:2:1-5:12
+MERGED from [com.google.android.gms:play-services-basement:11.6.2] /home/zticky/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.6.2.aar/5bb1fc192485acdbf1a566674022a799/AndroidManifest.xml:16:1-23:12
+MERGED from [com.akexorcist:localizationactivity:1.2.2] /home/zticky/.gradle/caches/transforms-1/files-1.1/localizationactivity-1.2.2.aar/3545c705a1076a2780eb319c9c259e06/AndroidManifest.xml:2:1-17:12
+MERGED from [com.android.support:appcompat-v7:26.1.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/3966a2f8e170a0c61982d8ef621d5070/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:transition:26.1.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/a094d1db3c2233916a50e9dba88b3754/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:26.1.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/c91e938fa96ec43da5f69266d3592d95/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/987ccce90300827d00d35db4dfafa27c/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/bc5c8e8bf79a8842bf9f51e51b85c151/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/zticky/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/4d40b4cff2b85dfeb4a7be875cd8948e/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:recyclerview-v7:26.1.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/73cbf438f2c21ed499a46aa8cb249ff4/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-fragment:26.1.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/ecf7b6bfac1e9d44a6feebc68d5083e0/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-ui:26.1.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/f96ffe1e9cea873674e32523beff7a6f/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-media-compat:26.1.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/32255b63789477ed996b0a46db24abc1/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-utils:26.1.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/d3516f27e8cd58e91cd6f9ff99bfff78/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-compat:26.1.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/3c52345d9ac614f0a37c8aba325c28e2/AndroidManifest.xml:17:1-31:12
+MERGED from [com.google.android.gms:play-services-vision-license:11.6.2] /home/zticky/.gradle/caches/transforms-1/files-1.1/play-services-vision-license-11.6.2.aar/27f909f129d52c07d847dfe0bff82d88/AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-base-license:11.6.2] /home/zticky/.gradle/caches/transforms-1/files-1.1/play-services-base-license-11.6.2.aar/6062133844dcc0b66e24c01751fb61aa/AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-basement-license:11.6.2] /home/zticky/.gradle/caches/transforms-1/files-1.1/play-services-basement-license-11.6.2.aar/966514d099d3fd9da167a46e10f11127/AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-vision-common-license:11.6.2] /home/zticky/.gradle/caches/transforms-1/files-1.1/play-services-vision-common-license-11.6.2.aar/37305e1835c79078cf20651ff4a0fb30/AndroidManifest.xml:2:1-6:12
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/4b11d0ff25e30d8d9eb4f8c6e6811ff7/AndroidManifest.xml:17:1-30:12
+MERGED from [com.google.android.gms:play-services-tasks-license:11.6.2] /home/zticky/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-11.6.2.aar/038ec063409839342e5a5e176259574e/AndroidManifest.xml:2:1-6:12
+INJECTED from /mnt/72E2CD59E2CD21E9/Dev/Mobile/Leexy_App/app/src/main/AndroidManifest.xml:2:1-69:12
+INJECTED from /mnt/72E2CD59E2CD21E9/Dev/Mobile/Leexy_App/app/src/main/AndroidManifest.xml:2:1-69:12
+INJECTED from /mnt/72E2CD59E2CD21E9/Dev/Mobile/Leexy_App/app/src/main/AndroidManifest.xml:2:1-69:12
 	package
-		ADDED from D:\Dev\Mobile\Leexy_App\app\src\main\AndroidManifest.xml:3:5-28
-		INJECTED from D:\Dev\Mobile\Leexy_App\app\src\main\AndroidManifest.xml
-		INJECTED from D:\Dev\Mobile\Leexy_App\app\src\main\AndroidManifest.xml
+		ADDED from /mnt/72E2CD59E2CD21E9/Dev/Mobile/Leexy_App/app/src/main/AndroidManifest.xml:3:5-28
+		INJECTED from /mnt/72E2CD59E2CD21E9/Dev/Mobile/Leexy_App/app/src/main/AndroidManifest.xml
+		INJECTED from /mnt/72E2CD59E2CD21E9/Dev/Mobile/Leexy_App/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from D:\Dev\Mobile\Leexy_App\app\src\main\AndroidManifest.xml
-		INJECTED from D:\Dev\Mobile\Leexy_App\app\src\main\AndroidManifest.xml
-	xmlns:android
-		ADDED from D:\Dev\Mobile\Leexy_App\app\src\main\AndroidManifest.xml:2:11-69
+		INJECTED from /mnt/72E2CD59E2CD21E9/Dev/Mobile/Leexy_App/app/src/main/AndroidManifest.xml
+		ADDED from /mnt/72E2CD59E2CD21E9/Dev/Mobile/Leexy_App/app/src/main/AndroidManifest.xml:2:1-69:12
+		INJECTED from /mnt/72E2CD59E2CD21E9/Dev/Mobile/Leexy_App/app/src/main/AndroidManifest.xml
 	android:versionCode
-		INJECTED from D:\Dev\Mobile\Leexy_App\app\src\main\AndroidManifest.xml
-		INJECTED from D:\Dev\Mobile\Leexy_App\app\src\main\AndroidManifest.xml
+		INJECTED from /mnt/72E2CD59E2CD21E9/Dev/Mobile/Leexy_App/app/src/main/AndroidManifest.xml
+		ADDED from /mnt/72E2CD59E2CD21E9/Dev/Mobile/Leexy_App/app/src/main/AndroidManifest.xml:2:1-69:12
+		INJECTED from /mnt/72E2CD59E2CD21E9/Dev/Mobile/Leexy_App/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /mnt/72E2CD59E2CD21E9/Dev/Mobile/Leexy_App/app/src/main/AndroidManifest.xml:2:11-69
 	android:installLocation
-		ADDED from D:\Dev\Mobile\Leexy_App\app\src\main\AndroidManifest.xml:4:5-35
+		ADDED from /mnt/72E2CD59E2CD21E9/Dev/Mobile/Leexy_App/app/src/main/AndroidManifest.xml:4:5-35
 uses-feature#android.hardware.camera
-ADDED from D:\Dev\Mobile\Leexy_App\app\src\main\AndroidManifest.xml:6:5-60
+ADDED from /mnt/72E2CD59E2CD21E9/Dev/Mobile/Leexy_App/app/src/main/AndroidManifest.xml:6:5-60
 	android:name
-		ADDED from D:\Dev\Mobile\Leexy_App\app\src\main\AndroidManifest.xml:6:19-57
+		ADDED from /mnt/72E2CD59E2CD21E9/Dev/Mobile/Leexy_App/app/src/main/AndroidManifest.xml:6:19-57
 uses-permission#android.permission.CAMERA
-ADDED from D:\Dev\Mobile\Leexy_App\app\src\main\AndroidManifest.xml:8:5-65
+ADDED from /mnt/72E2CD59E2CD21E9/Dev/Mobile/Leexy_App/app/src/main/AndroidManifest.xml:8:5-65
 	android:name
-		ADDED from D:\Dev\Mobile\Leexy_App\app\src\main\AndroidManifest.xml:8:22-62
+		ADDED from /mnt/72E2CD59E2CD21E9/Dev/Mobile/Leexy_App/app/src/main/AndroidManifest.xml:8:22-62
 uses-permission#android.permission.CALL_PHONE
-ADDED from D:\Dev\Mobile\Leexy_App\app\src\main\AndroidManifest.xml:10:5-85
+ADDED from /mnt/72E2CD59E2CD21E9/Dev/Mobile/Leexy_App/app/src/main/AndroidManifest.xml:9:5-69
 	android:name
-		ADDED from D:\Dev\Mobile\Leexy_App\app\src\main\AndroidManifest.xml:10:22-66
+		ADDED from /mnt/72E2CD59E2CD21E9/Dev/Mobile/Leexy_App/app/src/main/AndroidManifest.xml:9:22-66
+uses-permission#android.permission.INTERNET
+ADDED from /mnt/72E2CD59E2CD21E9/Dev/Mobile/Leexy_App/app/src/main/AndroidManifest.xml:10:5-67
+	android:name
+		ADDED from /mnt/72E2CD59E2CD21E9/Dev/Mobile/Leexy_App/app/src/main/AndroidManifest.xml:10:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /mnt/72E2CD59E2CD21E9/Dev/Mobile/Leexy_App/app/src/main/AndroidManifest.xml:11:5-79
+	android:name
+		ADDED from /mnt/72E2CD59E2CD21E9/Dev/Mobile/Leexy_App/app/src/main/AndroidManifest.xml:11:22-76
 application
-ADDED from D:\Dev\Mobile\Leexy_App\app\src\main\AndroidManifest.xml:12:5-34:19
-MERGED from [com.google.android.gms:play-services-vision:9.4.0] D:\Dev\Mobile\Leexy_App\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-vision\9.4.0\AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-base:9.4.0] D:\Dev\Mobile\Leexy_App\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.4.0\AndroidManifest.xml:19:5-23:19
-MERGED from [com.google.android.gms:play-services-basement:9.4.0] D:\Dev\Mobile\Leexy_App\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.4.0\AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:24.2.0] D:\Dev\Mobile\Leexy_App\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.0\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:24.2.0] D:\Dev\Mobile\Leexy_App\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.0\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-utils:24.2.0] D:\Dev\Mobile\Leexy_App\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.0\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-media-compat:24.2.0] D:\Dev\Mobile\Leexy_App\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.0\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-ui:24.2.0] D:\Dev\Mobile\Leexy_App\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.0\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-fragment:24.2.0] D:\Dev\Mobile\Leexy_App\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.0\AndroidManifest.xml:25:5-20
-MERGED from [com.google.android.gms:play-services-tasks:9.4.0] D:\Dev\Mobile\Leexy_App\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.4.0\AndroidManifest.xml:5:5-20
-MERGED from [com.android.support:design:24.2.0] D:\Dev\Mobile\Leexy_App\app\build\intermediates\exploded-aar\com.android.support\design\24.2.0\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:appcompat-v7:24.2.0] D:\Dev\Mobile\Leexy_App\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.0\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-vector-drawable:24.2.0] D:\Dev\Mobile\Leexy_App\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.0\AndroidManifest.xml:23:5-20
-MERGED from [com.android.support:animated-vector-drawable:24.2.0] D:\Dev\Mobile\Leexy_App\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.0\AndroidManifest.xml:22:5-20
-	android:label
-		ADDED from D:\Dev\Mobile\Leexy_App\app\src\main\AndroidManifest.xml:17:9-33
+ADDED from /mnt/72E2CD59E2CD21E9/Dev/Mobile/Leexy_App/app/src/main/AndroidManifest.xml:13:5-67:19
+MERGED from [com.mopub:mopub-sdk-banner:4.17.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/mopub-sdk-banner-4.17.0.aar/065abd30ee2b32d2fc089e98b99b8b53/AndroidManifest.xml:11:5-20
+MERGED from [com.mopub:mopub-sdk-banner:4.17.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/mopub-sdk-banner-4.17.0.aar/065abd30ee2b32d2fc089e98b99b8b53/AndroidManifest.xml:11:5-20
+MERGED from [com.android.support:design:26.1.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/55dbcc0b6f113a3e31b43953e3c8c4ca/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:design:26.1.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/55dbcc0b6f113a3e31b43953e3c8c4ca/AndroidManifest.xml:25:5-29:19
+MERGED from [com.mopub:mopub-sdk-base:4.17.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/mopub-sdk-base-4.17.0.aar/9639d309269e9894ed6c5b427310750e/AndroidManifest.xml:11:5-20
+MERGED from [com.mopub:mopub-sdk-base:4.17.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/mopub-sdk-base-4.17.0.aar/9639d309269e9894ed6c5b427310750e/AndroidManifest.xml:11:5-20
+MERGED from [com.google.android.gms:play-services-vision:11.6.2] /home/zticky/.gradle/caches/transforms-1/files-1.1/play-services-vision-11.6.2.aar/020cdc40bf86ee1b70d4a3043efc1035/AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-vision:11.6.2] /home/zticky/.gradle/caches/transforms-1/files-1.1/play-services-vision-11.6.2.aar/020cdc40bf86ee1b70d4a3043efc1035/AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-vision-common:11.6.2] /home/zticky/.gradle/caches/transforms-1/files-1.1/play-services-vision-common-11.6.2.aar/cb7a9940593e5e7e54dd7df6540e3b06/AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-vision-common:11.6.2] /home/zticky/.gradle/caches/transforms-1/files-1.1/play-services-vision-common-11.6.2.aar/cb7a9940593e5e7e54dd7df6540e3b06/AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-base:11.6.2] /home/zticky/.gradle/caches/transforms-1/files-1.1/play-services-base-11.6.2.aar/03cd64eb63578ac7cd677b9f6033923a/AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.android.gms:play-services-base:11.6.2] /home/zticky/.gradle/caches/transforms-1/files-1.1/play-services-base-11.6.2.aar/03cd64eb63578ac7cd677b9f6033923a/AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.android.gms:play-services-tasks:11.6.2] /home/zticky/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.6.2.aar/6bd4bc7e08ed0d39127caa76b6831a2b/AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-tasks:11.6.2] /home/zticky/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.6.2.aar/6bd4bc7e08ed0d39127caa76b6831a2b/AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-basement:11.6.2] /home/zticky/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.6.2.aar/5bb1fc192485acdbf1a566674022a799/AndroidManifest.xml:19:5-21:19
+MERGED from [com.google.android.gms:play-services-basement:11.6.2] /home/zticky/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.6.2.aar/5bb1fc192485acdbf1a566674022a799/AndroidManifest.xml:19:5-21:19
+MERGED from [com.akexorcist:localizationactivity:1.2.2] /home/zticky/.gradle/caches/transforms-1/files-1.1/localizationactivity-1.2.2.aar/3545c705a1076a2780eb319c9c259e06/AndroidManifest.xml:11:5-15:19
+MERGED from [com.akexorcist:localizationactivity:1.2.2] /home/zticky/.gradle/caches/transforms-1/files-1.1/localizationactivity-1.2.2.aar/3545c705a1076a2780eb319c9c259e06/AndroidManifest.xml:11:5-15:19
+MERGED from [com.android.support:appcompat-v7:26.1.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/3966a2f8e170a0c61982d8ef621d5070/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:appcompat-v7:26.1.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/3966a2f8e170a0c61982d8ef621d5070/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:transition:26.1.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/a094d1db3c2233916a50e9dba88b3754/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:transition:26.1.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/a094d1db3c2233916a50e9dba88b3754/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-v4:26.1.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/c91e938fa96ec43da5f69266d3592d95/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-v4:26.1.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/c91e938fa96ec43da5f69266d3592d95/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/987ccce90300827d00d35db4dfafa27c/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/987ccce90300827d00d35db4dfafa27c/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/bc5c8e8bf79a8842bf9f51e51b85c151/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/bc5c8e8bf79a8842bf9f51e51b85c151/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/zticky/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/4d40b4cff2b85dfeb4a7be875cd8948e/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/zticky/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/4d40b4cff2b85dfeb4a7be875cd8948e/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:recyclerview-v7:26.1.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/73cbf438f2c21ed499a46aa8cb249ff4/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:recyclerview-v7:26.1.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/73cbf438f2c21ed499a46aa8cb249ff4/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-fragment:26.1.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/ecf7b6bfac1e9d44a6feebc68d5083e0/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.1.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/ecf7b6bfac1e9d44a6feebc68d5083e0/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.1.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/f96ffe1e9cea873674e32523beff7a6f/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.1.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/f96ffe1e9cea873674e32523beff7a6f/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/32255b63789477ed996b0a46db24abc1/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/32255b63789477ed996b0a46db24abc1/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.1.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/d3516f27e8cd58e91cd6f9ff99bfff78/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.1.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/d3516f27e8cd58e91cd6f9ff99bfff78/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.1.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/3c52345d9ac614f0a37c8aba325c28e2/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.1.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/3c52345d9ac614f0a37c8aba325c28e2/AndroidManifest.xml:25:5-29:19
+MERGED from [com.google.android.gms:play-services-vision-license:11.6.2] /home/zticky/.gradle/caches/transforms-1/files-1.1/play-services-vision-license-11.6.2.aar/27f909f129d52c07d847dfe0bff82d88/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-vision-license:11.6.2] /home/zticky/.gradle/caches/transforms-1/files-1.1/play-services-vision-license-11.6.2.aar/27f909f129d52c07d847dfe0bff82d88/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-base-license:11.6.2] /home/zticky/.gradle/caches/transforms-1/files-1.1/play-services-base-license-11.6.2.aar/6062133844dcc0b66e24c01751fb61aa/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-base-license:11.6.2] /home/zticky/.gradle/caches/transforms-1/files-1.1/play-services-base-license-11.6.2.aar/6062133844dcc0b66e24c01751fb61aa/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-basement-license:11.6.2] /home/zticky/.gradle/caches/transforms-1/files-1.1/play-services-basement-license-11.6.2.aar/966514d099d3fd9da167a46e10f11127/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-basement-license:11.6.2] /home/zticky/.gradle/caches/transforms-1/files-1.1/play-services-basement-license-11.6.2.aar/966514d099d3fd9da167a46e10f11127/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-vision-common-license:11.6.2] /home/zticky/.gradle/caches/transforms-1/files-1.1/play-services-vision-common-license-11.6.2.aar/37305e1835c79078cf20651ff4a0fb30/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-vision-common-license:11.6.2] /home/zticky/.gradle/caches/transforms-1/files-1.1/play-services-vision-common-license-11.6.2.aar/37305e1835c79078cf20651ff4a0fb30/AndroidManifest.xml:5:5-20
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/4b11d0ff25e30d8d9eb4f8c6e6811ff7/AndroidManifest.xml:24:5-28:19
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/4b11d0ff25e30d8d9eb4f8c6e6811ff7/AndroidManifest.xml:24:5-28:19
+MERGED from [com.google.android.gms:play-services-tasks-license:11.6.2] /home/zticky/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-11.6.2.aar/038ec063409839342e5a5e176259574e/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-tasks-license:11.6.2] /home/zticky/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-11.6.2.aar/038ec063409839342e5a5e176259574e/AndroidManifest.xml:5:5-20
 	android:supportsRtl
-		ADDED from D:\Dev\Mobile\Leexy_App\app\src\main\AndroidManifest.xml:18:9-37
-	android:hardwareAccelerated
-		ADDED from D:\Dev\Mobile\Leexy_App\app\src\main\AndroidManifest.xml:15:9-43
-	android:fullBackupContent
-		ADDED from D:\Dev\Mobile\Leexy_App\app\src\main\AndroidManifest.xml:14:9-42
-	android:allowBackup
-		ADDED from D:\Dev\Mobile\Leexy_App\app\src\main\AndroidManifest.xml:13:9-35
-	android:icon
-		ADDED from D:\Dev\Mobile\Leexy_App\app\src\main\AndroidManifest.xml:16:9-38
-	android:theme
-		ADDED from D:\Dev\Mobile\Leexy_App\app\src\main\AndroidManifest.xml:19:9-47
-meta-data#com.Leexy.app.version
-ADDED from D:\Dev\Mobile\Leexy_App\app\src\main\AndroidManifest.xml:20:9-22:69
-	android:value
-		ADDED from D:\Dev\Mobile\Leexy_App\app\src\main\AndroidManifest.xml:22:13-66
-	android:name
-		ADDED from D:\Dev\Mobile\Leexy_App\app\src\main\AndroidManifest.xml:21:13-49
-meta-data#com.Leexy.app.DEPENDENCIES
-ADDED from D:\Dev\Mobile\Leexy_App\app\src\main\AndroidManifest.xml:23:9-25:35
-	android:value
-		ADDED from D:\Dev\Mobile\Leexy_App\app\src\main\AndroidManifest.xml:25:13-32
-	android:name
-		ADDED from D:\Dev\Mobile\Leexy_App\app\src\main\AndroidManifest.xml:24:13-54
-activity#com.Leexy.app.OcrCaptureActivity
-ADDED from D:\Dev\Mobile\Leexy_App\app\src\main\AndroidManifest.xml:27:9-33:20
+		ADDED from /mnt/72E2CD59E2CD21E9/Dev/Mobile/Leexy_App/app/src/main/AndroidManifest.xml:19:9-35
 	android:label
-		ADDED from D:\Dev\Mobile\Leexy_App\app\src\main\AndroidManifest.xml:28:13-38
-	android:name
-		ADDED from D:\Dev\Mobile\Leexy_App\app\src\main\AndroidManifest.xml:27:19-66
-intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from D:\Dev\Mobile\Leexy_App\app\src\main\AndroidManifest.xml:29:13-32:29
-action#android.intent.action.MAIN
-ADDED from D:\Dev\Mobile\Leexy_App\app\src\main\AndroidManifest.xml:30:17-69
-	android:name
-		ADDED from D:\Dev\Mobile\Leexy_App\app\src\main\AndroidManifest.xml:30:25-66
-category#android.intent.category.LAUNCHER
-ADDED from D:\Dev\Mobile\Leexy_App\app\src\main\AndroidManifest.xml:31:17-77
-	android:name
-		ADDED from D:\Dev\Mobile\Leexy_App\app\src\main\AndroidManifest.xml:31:27-74
-uses-sdk
-INJECTED from D:\Dev\Mobile\Leexy_App\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [com.google.android.gms:play-services-vision:9.4.0] D:\Dev\Mobile\Leexy_App\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-vision\9.4.0\AndroidManifest.xml:4:5-42
-MERGED from [com.google.android.gms:play-services-base:9.4.0] D:\Dev\Mobile\Leexy_App\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-basement:9.4.0] D:\Dev\Mobile\Leexy_App\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:24.2.0] D:\Dev\Mobile\Leexy_App\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.0\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-compat:24.2.0] D:\Dev\Mobile\Leexy_App\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.0\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-utils:24.2.0] D:\Dev\Mobile\Leexy_App\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.0\AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-media-compat:24.2.0] D:\Dev\Mobile\Leexy_App\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.0\AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-core-ui:24.2.0] D:\Dev\Mobile\Leexy_App\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.0\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-fragment:24.2.0] D:\Dev\Mobile\Leexy_App\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.0\AndroidManifest.xml:21:5-23:60
-MERGED from [com.google.android.gms:play-services-tasks:9.4.0] D:\Dev\Mobile\Leexy_App\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.4.0\AndroidManifest.xml:4:5-43
-MERGED from [com.android.support:design:24.2.0] D:\Dev\Mobile\Leexy_App\app\build\intermediates\exploded-aar\com.android.support\design\24.2.0\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:appcompat-v7:24.2.0] D:\Dev\Mobile\Leexy_App\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.0\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:support-vector-drawable:24.2.0] D:\Dev\Mobile\Leexy_App\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.0\AndroidManifest.xml:21:5-43
-MERGED from [com.android.support:animated-vector-drawable:24.2.0] D:\Dev\Mobile\Leexy_App\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:24.2.0] D:\Dev\Mobile\Leexy_App\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\24.2.0\AndroidManifest.xml:20:5-43
-	tools:overrideLibrary
-		ADDED from [com.android.support:support-v4:24.2.0] D:\Dev\Mobile\Leexy_App\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.0\AndroidManifest.xml:23:9-51
-	android:targetSdkVersion
-		INJECTED from D:\Dev\Mobile\Leexy_App\app\src\main\AndroidManifest.xml
-		INJECTED from D:\Dev\Mobile\Leexy_App\app\src\main\AndroidManifest.xml
-	android:minSdkVersion
-		INJECTED from D:\Dev\Mobile\Leexy_App\app\src\main\AndroidManifest.xml
-		INJECTED from D:\Dev\Mobile\Leexy_App\app\src\main\AndroidManifest.xml
-activity#com.google.android.gms.common.api.GoogleApiActivity
-ADDED from [com.google.android.gms:play-services-base:9.4.0] D:\Dev\Mobile\Leexy_App\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.4.0\AndroidManifest.xml:20:9-22:45
-	android:exported
-		ADDED from [com.google.android.gms:play-services-base:9.4.0] D:\Dev\Mobile\Leexy_App\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.4.0\AndroidManifest.xml:22:19-43
+		ADDED from /mnt/72E2CD59E2CD21E9/Dev/Mobile/Leexy_App/app/src/main/AndroidManifest.xml:18:9-30
+	android:hardwareAccelerated
+		ADDED from /mnt/72E2CD59E2CD21E9/Dev/Mobile/Leexy_App/app/src/main/AndroidManifest.xml:16:9-43
+	android:fullBackupContent
+		ADDED from /mnt/72E2CD59E2CD21E9/Dev/Mobile/Leexy_App/app/src/main/AndroidManifest.xml:15:9-42
+	android:icon
+		ADDED from /mnt/72E2CD59E2CD21E9/Dev/Mobile/Leexy_App/app/src/main/AndroidManifest.xml:17:9-43
+	android:allowBackup
+		ADDED from /mnt/72E2CD59E2CD21E9/Dev/Mobile/Leexy_App/app/src/main/AndroidManifest.xml:14:9-35
 	android:theme
-		ADDED from [com.google.android.gms:play-services-base:9.4.0] D:\Dev\Mobile\Leexy_App\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.4.0\AndroidManifest.xml:21:19-78
-	android:name
-		ADDED from [com.google.android.gms:play-services-base:9.4.0] D:\Dev\Mobile\Leexy_App\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.4.0\AndroidManifest.xml:20:19-85
-meta-data#com.google.android.gms.version
-ADDED from [com.google.android.gms:play-services-basement:9.4.0] D:\Dev\Mobile\Leexy_App\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.4.0\AndroidManifest.xml:21:9-23:69
+		ADDED from /mnt/72E2CD59E2CD21E9/Dev/Mobile/Leexy_App/app/src/main/AndroidManifest.xml:20:9-51
+meta-data#com.Leexy.app.version
+ADDED from /mnt/72E2CD59E2CD21E9/Dev/Mobile/Leexy_App/app/src/main/AndroidManifest.xml:21:9-23:69
 	android:value
-		ADDED from [com.google.android.gms:play-services-basement:9.4.0] D:\Dev\Mobile\Leexy_App\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.4.0\AndroidManifest.xml:23:13-66
+		ADDED from /mnt/72E2CD59E2CD21E9/Dev/Mobile/Leexy_App/app/src/main/AndroidManifest.xml:23:13-66
 	android:name
-		ADDED from [com.google.android.gms:play-services-basement:9.4.0] D:\Dev\Mobile\Leexy_App\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.4.0\AndroidManifest.xml:22:13-58
+		ADDED from /mnt/72E2CD59E2CD21E9/Dev/Mobile/Leexy_App/app/src/main/AndroidManifest.xml:22:13-49
+meta-data#com.Leexy.app.DEPENDENCIES
+ADDED from /mnt/72E2CD59E2CD21E9/Dev/Mobile/Leexy_App/app/src/main/AndroidManifest.xml:24:9-26:35
+	android:value
+		ADDED from /mnt/72E2CD59E2CD21E9/Dev/Mobile/Leexy_App/app/src/main/AndroidManifest.xml:26:13-32
+	android:name
+		ADDED from /mnt/72E2CD59E2CD21E9/Dev/Mobile/Leexy_App/app/src/main/AndroidManifest.xml:25:13-54
+activity#com.Leexy.app.OcrCaptureActivity
+ADDED from /mnt/72E2CD59E2CD21E9/Dev/Mobile/Leexy_App/app/src/main/AndroidManifest.xml:28:9-36:20
+	android:label
+		ADDED from /mnt/72E2CD59E2CD21E9/Dev/Mobile/Leexy_App/app/src/main/AndroidManifest.xml:30:13-34
+	android:name
+		ADDED from /mnt/72E2CD59E2CD21E9/Dev/Mobile/Leexy_App/app/src/main/AndroidManifest.xml:29:13-47
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /mnt/72E2CD59E2CD21E9/Dev/Mobile/Leexy_App/app/src/main/AndroidManifest.xml:31:13-35:29
+action#android.intent.action.MAIN
+ADDED from /mnt/72E2CD59E2CD21E9/Dev/Mobile/Leexy_App/app/src/main/AndroidManifest.xml:32:17-69
+	android:name
+		ADDED from /mnt/72E2CD59E2CD21E9/Dev/Mobile/Leexy_App/app/src/main/AndroidManifest.xml:32:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /mnt/72E2CD59E2CD21E9/Dev/Mobile/Leexy_App/app/src/main/AndroidManifest.xml:34:17-77
+	android:name
+		ADDED from /mnt/72E2CD59E2CD21E9/Dev/Mobile/Leexy_App/app/src/main/AndroidManifest.xml:34:27-74
+activity#com.mopub.mobileads.MoPubActivity
+ADDED from /mnt/72E2CD59E2CD21E9/Dev/Mobile/Leexy_App/app/src/main/AndroidManifest.xml:37:9-39:77
+	android:configChanges
+		ADDED from /mnt/72E2CD59E2CD21E9/Dev/Mobile/Leexy_App/app/src/main/AndroidManifest.xml:39:13-74
+	android:name
+		ADDED from /mnt/72E2CD59E2CD21E9/Dev/Mobile/Leexy_App/app/src/main/AndroidManifest.xml:38:13-61
+activity#com.mopub.mobileads.MraidActivity
+ADDED from /mnt/72E2CD59E2CD21E9/Dev/Mobile/Leexy_App/app/src/main/AndroidManifest.xml:40:9-42:77
+	android:configChanges
+		ADDED from /mnt/72E2CD59E2CD21E9/Dev/Mobile/Leexy_App/app/src/main/AndroidManifest.xml:42:13-74
+	android:name
+		ADDED from /mnt/72E2CD59E2CD21E9/Dev/Mobile/Leexy_App/app/src/main/AndroidManifest.xml:41:13-61
+activity#com.mopub.common.MoPubBrowser
+ADDED from /mnt/72E2CD59E2CD21E9/Dev/Mobile/Leexy_App/app/src/main/AndroidManifest.xml:43:9-45:77
+	android:configChanges
+		ADDED from /mnt/72E2CD59E2CD21E9/Dev/Mobile/Leexy_App/app/src/main/AndroidManifest.xml:45:13-74
+	android:name
+		ADDED from /mnt/72E2CD59E2CD21E9/Dev/Mobile/Leexy_App/app/src/main/AndroidManifest.xml:44:13-57
+activity#com.mopub.mobileads.MraidVideoPlayerActivity
+ADDED from /mnt/72E2CD59E2CD21E9/Dev/Mobile/Leexy_App/app/src/main/AndroidManifest.xml:46:9-48:77
+	android:configChanges
+		ADDED from /mnt/72E2CD59E2CD21E9/Dev/Mobile/Leexy_App/app/src/main/AndroidManifest.xml:48:13-74
+	android:name
+		ADDED from /mnt/72E2CD59E2CD21E9/Dev/Mobile/Leexy_App/app/src/main/AndroidManifest.xml:47:13-72
+activity#com.google.ads.AdActivity
+ADDED from /mnt/72E2CD59E2CD21E9/Dev/Mobile/Leexy_App/app/src/main/AndroidManifest.xml:49:9-51:125
+	android:configChanges
+		ADDED from /mnt/72E2CD59E2CD21E9/Dev/Mobile/Leexy_App/app/src/main/AndroidManifest.xml:51:13-122
+	android:name
+		ADDED from /mnt/72E2CD59E2CD21E9/Dev/Mobile/Leexy_App/app/src/main/AndroidManifest.xml:50:13-53
+activity#com.millennialmedia.android.MMActivity
+ADDED from /mnt/72E2CD59E2CD21E9/Dev/Mobile/Leexy_App/app/src/main/AndroidManifest.xml:52:9-55:75
+	android:configChanges
+		ADDED from /mnt/72E2CD59E2CD21E9/Dev/Mobile/Leexy_App/app/src/main/AndroidManifest.xml:54:13-72
+	android:theme
+		ADDED from /mnt/72E2CD59E2CD21E9/Dev/Mobile/Leexy_App/app/src/main/AndroidManifest.xml:55:13-72
+	android:name
+		ADDED from /mnt/72E2CD59E2CD21E9/Dev/Mobile/Leexy_App/app/src/main/AndroidManifest.xml:53:13-66
+activity#com.millennialmedia.android.VideoPlayer
+ADDED from /mnt/72E2CD59E2CD21E9/Dev/Mobile/Leexy_App/app/src/main/AndroidManifest.xml:56:9-58:75
+	android:configChanges
+		ADDED from /mnt/72E2CD59E2CD21E9/Dev/Mobile/Leexy_App/app/src/main/AndroidManifest.xml:58:13-72
+	android:name
+		ADDED from /mnt/72E2CD59E2CD21E9/Dev/Mobile/Leexy_App/app/src/main/AndroidManifest.xml:57:13-67
+activity#com.Leexy.app.SettingsActivity
+ADDED from /mnt/72E2CD59E2CD21E9/Dev/Mobile/Leexy_App/app/src/main/AndroidManifest.xml:59:9-66:20
+	android:parentActivityName
+		ADDED from /mnt/72E2CD59E2CD21E9/Dev/Mobile/Leexy_App/app/src/main/AndroidManifest.xml:61:13-61
+	android:name
+		ADDED from /mnt/72E2CD59E2CD21E9/Dev/Mobile/Leexy_App/app/src/main/AndroidManifest.xml:60:13-45
+meta-data#android.support.PARENT_ACTIVITY
+ADDED from /mnt/72E2CD59E2CD21E9/Dev/Mobile/Leexy_App/app/src/main/AndroidManifest.xml:63:13-65:55
+	android:value
+		ADDED from /mnt/72E2CD59E2CD21E9/Dev/Mobile/Leexy_App/app/src/main/AndroidManifest.xml:65:17-52
+	android:name
+		ADDED from /mnt/72E2CD59E2CD21E9/Dev/Mobile/Leexy_App/app/src/main/AndroidManifest.xml:64:17-63
+uses-sdk
+INJECTED from /mnt/72E2CD59E2CD21E9/Dev/Mobile/Leexy_App/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /mnt/72E2CD59E2CD21E9/Dev/Mobile/Leexy_App/app/src/main/AndroidManifest.xml
+INJECTED from /mnt/72E2CD59E2CD21E9/Dev/Mobile/Leexy_App/app/src/main/AndroidManifest.xml
+MERGED from [com.mopub:mopub-sdk-banner:4.17.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/mopub-sdk-banner-4.17.0.aar/065abd30ee2b32d2fc089e98b99b8b53/AndroidManifest.xml:7:5-9:41
+MERGED from [com.mopub:mopub-sdk-banner:4.17.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/mopub-sdk-banner-4.17.0.aar/065abd30ee2b32d2fc089e98b99b8b53/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:design:26.1.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/55dbcc0b6f113a3e31b43953e3c8c4ca/AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:design:26.1.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/55dbcc0b6f113a3e31b43953e3c8c4ca/AndroidManifest.xml:21:5-23:62
+MERGED from [com.mopub:mopub-sdk-base:4.17.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/mopub-sdk-base-4.17.0.aar/9639d309269e9894ed6c5b427310750e/AndroidManifest.xml:7:5-9:41
+MERGED from [com.mopub:mopub-sdk-base:4.17.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/mopub-sdk-base-4.17.0.aar/9639d309269e9894ed6c5b427310750e/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.android.gms:play-services-vision:11.6.2] /home/zticky/.gradle/caches/transforms-1/files-1.1/play-services-vision-11.6.2.aar/020cdc40bf86ee1b70d4a3043efc1035/AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-vision:11.6.2] /home/zticky/.gradle/caches/transforms-1/files-1.1/play-services-vision-11.6.2.aar/020cdc40bf86ee1b70d4a3043efc1035/AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-vision-common:11.6.2] /home/zticky/.gradle/caches/transforms-1/files-1.1/play-services-vision-common-11.6.2.aar/cb7a9940593e5e7e54dd7df6540e3b06/AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-vision-common:11.6.2] /home/zticky/.gradle/caches/transforms-1/files-1.1/play-services-vision-common-11.6.2.aar/cb7a9940593e5e7e54dd7df6540e3b06/AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-base:11.6.2] /home/zticky/.gradle/caches/transforms-1/files-1.1/play-services-base-11.6.2.aar/03cd64eb63578ac7cd677b9f6033923a/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-base:11.6.2] /home/zticky/.gradle/caches/transforms-1/files-1.1/play-services-base-11.6.2.aar/03cd64eb63578ac7cd677b9f6033923a/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-tasks:11.6.2] /home/zticky/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.6.2.aar/6bd4bc7e08ed0d39127caa76b6831a2b/AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-tasks:11.6.2] /home/zticky/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.6.2.aar/6bd4bc7e08ed0d39127caa76b6831a2b/AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-basement:11.6.2] /home/zticky/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.6.2.aar/5bb1fc192485acdbf1a566674022a799/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-basement:11.6.2] /home/zticky/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.6.2.aar/5bb1fc192485acdbf1a566674022a799/AndroidManifest.xml:17:5-43
+MERGED from [com.akexorcist:localizationactivity:1.2.2] /home/zticky/.gradle/caches/transforms-1/files-1.1/localizationactivity-1.2.2.aar/3545c705a1076a2780eb319c9c259e06/AndroidManifest.xml:7:5-9:41
+MERGED from [com.akexorcist:localizationactivity:1.2.2] /home/zticky/.gradle/caches/transforms-1/files-1.1/localizationactivity-1.2.2.aar/3545c705a1076a2780eb319c9c259e06/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:26.1.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/3966a2f8e170a0c61982d8ef621d5070/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:26.1.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/3966a2f8e170a0c61982d8ef621d5070/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:transition:26.1.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/a094d1db3c2233916a50e9dba88b3754/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:26.1.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/a094d1db3c2233916a50e9dba88b3754/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:26.1.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/c91e938fa96ec43da5f69266d3592d95/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:26.1.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/c91e938fa96ec43da5f69266d3592d95/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/987ccce90300827d00d35db4dfafa27c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/987ccce90300827d00d35db4dfafa27c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/bc5c8e8bf79a8842bf9f51e51b85c151/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/bc5c8e8bf79a8842bf9f51e51b85c151/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/zticky/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/4d40b4cff2b85dfeb4a7be875cd8948e/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/zticky/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/4d40b4cff2b85dfeb4a7be875cd8948e/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:recyclerview-v7:26.1.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/73cbf438f2c21ed499a46aa8cb249ff4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:26.1.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/73cbf438f2c21ed499a46aa8cb249ff4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:26.1.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/ecf7b6bfac1e9d44a6feebc68d5083e0/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:26.1.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/ecf7b6bfac1e9d44a6feebc68d5083e0/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-ui:26.1.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/f96ffe1e9cea873674e32523beff7a6f/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:26.1.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/f96ffe1e9cea873674e32523beff7a6f/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-media-compat:26.1.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/32255b63789477ed996b0a46db24abc1/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:26.1.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/32255b63789477ed996b0a46db24abc1/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-utils:26.1.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/d3516f27e8cd58e91cd6f9ff99bfff78/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:26.1.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/d3516f27e8cd58e91cd6f9ff99bfff78/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:26.1.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/3c52345d9ac614f0a37c8aba325c28e2/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:26.1.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/3c52345d9ac614f0a37c8aba325c28e2/AndroidManifest.xml:21:5-23:58
+MERGED from [com.google.android.gms:play-services-vision-license:11.6.2] /home/zticky/.gradle/caches/transforms-1/files-1.1/play-services-vision-license-11.6.2.aar/27f909f129d52c07d847dfe0bff82d88/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-vision-license:11.6.2] /home/zticky/.gradle/caches/transforms-1/files-1.1/play-services-vision-license-11.6.2.aar/27f909f129d52c07d847dfe0bff82d88/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-base-license:11.6.2] /home/zticky/.gradle/caches/transforms-1/files-1.1/play-services-base-license-11.6.2.aar/6062133844dcc0b66e24c01751fb61aa/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-base-license:11.6.2] /home/zticky/.gradle/caches/transforms-1/files-1.1/play-services-base-license-11.6.2.aar/6062133844dcc0b66e24c01751fb61aa/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-basement-license:11.6.2] /home/zticky/.gradle/caches/transforms-1/files-1.1/play-services-basement-license-11.6.2.aar/966514d099d3fd9da167a46e10f11127/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-basement-license:11.6.2] /home/zticky/.gradle/caches/transforms-1/files-1.1/play-services-basement-license-11.6.2.aar/966514d099d3fd9da167a46e10f11127/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-vision-common-license:11.6.2] /home/zticky/.gradle/caches/transforms-1/files-1.1/play-services-vision-common-license-11.6.2.aar/37305e1835c79078cf20651ff4a0fb30/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-vision-common-license:11.6.2] /home/zticky/.gradle/caches/transforms-1/files-1.1/play-services-vision-common-license-11.6.2.aar/37305e1835c79078cf20651ff4a0fb30/AndroidManifest.xml:4:5-43
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/4b11d0ff25e30d8d9eb4f8c6e6811ff7/AndroidManifest.xml:20:5-22:41
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/4b11d0ff25e30d8d9eb4f8c6e6811ff7/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.gms:play-services-tasks-license:11.6.2] /home/zticky/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-11.6.2.aar/038ec063409839342e5a5e176259574e/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-tasks-license:11.6.2] /home/zticky/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-11.6.2.aar/038ec063409839342e5a5e176259574e/AndroidManifest.xml:4:5-43
+INJECTED from /mnt/72E2CD59E2CD21E9/Dev/Mobile/Leexy_App/app/src/main/AndroidManifest.xml
+INJECTED from /mnt/72E2CD59E2CD21E9/Dev/Mobile/Leexy_App/app/src/main/AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [com.android.support:design:26.1.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/55dbcc0b6f113a3e31b43953e3c8c4ca/AndroidManifest.xml:23:9-59
+	android:targetSdkVersion
+		INJECTED from /mnt/72E2CD59E2CD21E9/Dev/Mobile/Leexy_App/app/src/main/AndroidManifest.xml
+		ADDED from /mnt/72E2CD59E2CD21E9/Dev/Mobile/Leexy_App/app/src/main/AndroidManifest.xml
+		INJECTED from /mnt/72E2CD59E2CD21E9/Dev/Mobile/Leexy_App/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /mnt/72E2CD59E2CD21E9/Dev/Mobile/Leexy_App/app/src/main/AndroidManifest.xml
+		ADDED from /mnt/72E2CD59E2CD21E9/Dev/Mobile/Leexy_App/app/src/main/AndroidManifest.xml
+		INJECTED from /mnt/72E2CD59E2CD21E9/Dev/Mobile/Leexy_App/app/src/main/AndroidManifest.xml
+meta-data#android.support.VERSION
+ADDED from [com.android.support:design:26.1.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/55dbcc0b6f113a3e31b43953e3c8c4ca/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:appcompat-v7:26.1.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/3966a2f8e170a0c61982d8ef621d5070/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:appcompat-v7:26.1.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/3966a2f8e170a0c61982d8ef621d5070/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:transition:26.1.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/a094d1db3c2233916a50e9dba88b3754/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:transition:26.1.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/a094d1db3c2233916a50e9dba88b3754/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-v4:26.1.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/c91e938fa96ec43da5f69266d3592d95/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-v4:26.1.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/c91e938fa96ec43da5f69266d3592d95/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/987ccce90300827d00d35db4dfafa27c/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/987ccce90300827d00d35db4dfafa27c/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/bc5c8e8bf79a8842bf9f51e51b85c151/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/bc5c8e8bf79a8842bf9f51e51b85c151/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:recyclerview-v7:26.1.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/73cbf438f2c21ed499a46aa8cb249ff4/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:recyclerview-v7:26.1.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/73cbf438f2c21ed499a46aa8cb249ff4/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-fragment:26.1.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/ecf7b6bfac1e9d44a6feebc68d5083e0/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.1.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/ecf7b6bfac1e9d44a6feebc68d5083e0/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:26.1.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/f96ffe1e9cea873674e32523beff7a6f/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:26.1.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/f96ffe1e9cea873674e32523beff7a6f/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/32255b63789477ed996b0a46db24abc1/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/32255b63789477ed996b0a46db24abc1/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.1.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/d3516f27e8cd58e91cd6f9ff99bfff78/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.1.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/d3516f27e8cd58e91cd6f9ff99bfff78/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.1.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/3c52345d9ac614f0a37c8aba325c28e2/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.1.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/3c52345d9ac614f0a37c8aba325c28e2/AndroidManifest.xml:26:9-28:38
+	android:value
+		ADDED from [com.android.support:design:26.1.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/55dbcc0b6f113a3e31b43953e3c8c4ca/AndroidManifest.xml:28:13-35
+	android:name
+		ADDED from [com.android.support:design:26.1.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/55dbcc0b6f113a3e31b43953e3c8c4ca/AndroidManifest.xml:27:13-51
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:11.6.2] /home/zticky/.gradle/caches/transforms-1/files-1.1/play-services-base-11.6.2.aar/03cd64eb63578ac7cd677b9f6033923a/AndroidManifest.xml:19:9-172
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:11.6.2] /home/zticky/.gradle/caches/transforms-1/files-1.1/play-services-base-11.6.2.aar/03cd64eb63578ac7cd677b9f6033923a/AndroidManifest.xml:19:146-170
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:11.6.2] /home/zticky/.gradle/caches/transforms-1/files-1.1/play-services-base-11.6.2.aar/03cd64eb63578ac7cd677b9f6033923a/AndroidManifest.xml:19:86-145
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:11.6.2] /home/zticky/.gradle/caches/transforms-1/files-1.1/play-services-base-11.6.2.aar/03cd64eb63578ac7cd677b9f6033923a/AndroidManifest.xml:19:19-85
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:11.6.2] /home/zticky/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.6.2.aar/5bb1fc192485acdbf1a566674022a799/AndroidManifest.xml:20:9-121
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:11.6.2] /home/zticky/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.6.2.aar/5bb1fc192485acdbf1a566674022a799/AndroidManifest.xml:20:66-119
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:11.6.2] /home/zticky/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.6.2.aar/5bb1fc192485acdbf1a566674022a799/AndroidManifest.xml:20:20-65
+activity#com.akexorcist.localizationactivity.ui.BlankDummyActivity
+ADDED from [com.akexorcist:localizationactivity:1.2.2] /home/zticky/.gradle/caches/transforms-1/files-1.1/localizationactivity-1.2.2.aar/3545c705a1076a2780eb319c9c259e06/AndroidManifest.xml:12:9-14:69
+	android:theme
+		ADDED from [com.akexorcist:localizationactivity:1.2.2] /home/zticky/.gradle/caches/transforms-1/files-1.1/localizationactivity-1.2.2.aar/3545c705a1076a2780eb319c9c259e06/AndroidManifest.xml:14:13-66
+	android:name
+		ADDED from [com.akexorcist:localizationactivity:1.2.2] /home/zticky/.gradle/caches/transforms-1/files-1.1/localizationactivity-1.2.2.aar/3545c705a1076a2780eb319c9c259e06/AndroidManifest.xml:13:13-85
+meta-data#android.arch.lifecycle.VERSION
+ADDED from [android.arch.lifecycle:runtime:1.0.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/4b11d0ff25e30d8d9eb4f8c6e6811ff7/AndroidManifest.xml:25:9-27:47
+	android:value
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/4b11d0ff25e30d8d9eb4f8c6e6811ff7/AndroidManifest.xml:27:13-44
+	android:name
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] /home/zticky/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/4b11d0ff25e30d8d9eb4f8c6e6811ff7/AndroidManifest.xml:26:13-58

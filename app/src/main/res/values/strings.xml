@@ -1,15 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="title_activity_main">Leexy</string>
     <string name="ok">OK</string>
-    <string name="permission_camera_rationale">Access to the camera is needed for detection</string>
-    <string name="no_camera_permission">This application cannot run because it does not have the camera permission.  The application will now exit.</string>
+    <string name="permissions_notgranted">This application cannot run because it does not have Call/Camera permissions. Please give permissions from your phone settings. The application will now exit.</string>
     <string name="low_storage_error">Ocr dependencies cannot be downloaded due to low device storage</string>
-    <string name="title_activity_main">Leexy App</string>
-    <string name="ocr_header">Click &quot;Detect Text&quot; to detect text</string>
-    <string name="read_text">Detect Text</string>
-    <string name="auto_focus">Auto Focus</string>
-    <string name="use_flash">Use Flash</string>
-    <string name="ocr_success">Text read successfully</string>
-    <string name="ocr_failure">No text captured</string>
-    <string name="ocr_error">"Error reading text: %1$s"</string>
+    <string name="Detected_text_isntrefillcode">Detected text isn\'t a valid refill code, please try to scan a 14 digits code.</string>
+    <string name="No_valid_operator_detected">No valid mobile operator detected! Please check that you have a sim card connected to the network.</string>
+    <string name="Tap_rectangle_to_refill_your_account">Tap rectangle containing code to refill your prepaid mobile account.</string>
+    <string name="Dismiss">Dismiss</string>
+    <string name="Cancel">Cancel</string>
+    <string name="Call_permission_is_necessary">Call permission is necessary!</string>
+    <string name="confirm_correct_refill_code_dialog">Please confirm this is the correct refill code.</string>
+    <string name="permissions_needed_title">Permissions Needed!</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="languages">Languages</string>
+    <string name="privacy_policy">Read our &lt;a href=https://docs.google.com/document/d/e/2PACX-1vSsVQxjQeJa36nNUdL8VioEj-SsBBAK-3COzfknjRY2lSl6uI5IeeIVs-D5DR0HqjhvyJczyIUnqj69/pub>Privacy Policy&lt;/a></string>
+    <string name="email">Email</string>
+
+
 </resources>

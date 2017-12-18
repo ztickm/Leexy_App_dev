@@ -22,6 +22,8 @@ import com.Leexy.app.ui.camera.GraphicOverlay;
 import com.google.android.gms.vision.Detector;
 import com.google.android.gms.vision.text.TextBlock;
 
+import java.util.regex.Pattern;
+
 /**
  * A very simple Processor which gets detected TextBlocks and adds them to the overlay
  * as OcrGraphics.
@@ -49,9 +51,12 @@ public class OcrDetectorProcessor implements Detector.Processor<TextBlock> {
             TextBlock item = items.valueAt(i);
             if (item != null && item.getValue() != null) {
                 Log.d("OcrDetectorProcessor", "Text detected! " + item.getValue());
+            if ( Pattern.matches("[0-9]+[0-9 \\t]+", item.getValue()) ) {
+
+                OcrGraphic graphic = new OcrGraphic(mGraphicOverlay, item);
+                mGraphicOverlay.add(graphic);
             }
-            OcrGraphic graphic = new OcrGraphic(mGraphicOverlay, item);
-            mGraphicOverlay.add(graphic);
+            }
         }
     }
 

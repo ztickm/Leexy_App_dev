@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_activity_settings">إعدادات</string>
+    <string name="Call_permission_is_necessary">ترخيص إجراء المكالمات ضروري!</string>
+    <string name="Cancel">إلغاء</string>
+    <string name="Detected_text_isntrefillcode">النص الذي تم كشفه ليس  شفرة  صالحة لإعادة التعبئة، الرجاء محاولة مسح شفرة مكونة من 14 رقما.</string>
+    <string name="Dismiss">موافق</string>
+    <string name="No_valid_operator_detected">لم يتم كشف أي مشغل خدمات الهاتف ! يرجى التحقق من وجود شريحة متصلة بالشبكة.</string>
+    <string name="Tap_rectangle_to_refill_your_account">الرجاء الضغط على المستطيل الذي يحوي شفرة ذات 14 رقما لشحن حسابكم الهاتفي .</string>
+    <string name="confirm_correct_refill_code_dialog">الرجاء التأكّد من صحّة شفرة الشحن.</string>
+    <string name="ok">موافق</string>
+    <string name="permissions_needed_title">الترخيصات ضرورية!</string>
+    <string name="permissions_notgranted">لا يمكن تشغيل التطبيق لأنه لا يملك ترخيصات الاتصال / الكاميرا. يرجى إعطاءالترخيصات من إعدادات الهاتف. سيغلق التطبيق الآن.</string>
+    <string name="title_activity_main">ليكسي</string>
+    <string name="low_storage_error">لا يمكن تحميل مواد الكشف عن النصوص بسبب انخفاض ذاكرة الجهاز</string>
+    <string name="languages">إختيار اللغة</string>
+    <string name="privacy_policy"><a href= https://docs.google.com/document/d/e/2PACX-1vSsVQxjQeJa36nNUdL8VioEj-SsBBAK-3COzfknjRY2lSl6uI5IeeIVs-D5DR0HqjhvyJczyIUnqj69/pub>قراءة سياسة الخصوصية</a>
+    <string name="email">البريد الإلكتروني</string>
+</resources>

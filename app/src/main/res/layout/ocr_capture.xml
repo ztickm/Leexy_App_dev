@@ -1,18 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/topLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:keepScreenOn="true">
+    android:keepScreenOn="true"
+    tools:context=".OcrCaptureActivity"
+    android:orientation="vertical">
+    <com.mopub.mobileads.MoPubView
+        android:id="@+id/adview"
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"
+/>
 
     <com.Leexy.app.ui.camera.CameraSourcePreview
         android:id="@+id/preview"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_centerVertical="true"
-        android:layout_alignParentStart="true">
+        android:layout_height="200dp">
+
         <com.Leexy.app.ui.camera.GraphicOverlay
             android:id="@+id/graphicOverlay"
 
@@ -22,4 +29,20 @@
 
     </com.Leexy.app.ui.camera.CameraSourcePreview>
 
-</RelativeLayout>
+    <ImageButton
+        android:id="@+id/settings_btn"
+        style="@style/Widget.AppCompat.ImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:background="@color/common_google_signin_btn_text_dark_default"
+        android:contentDescription="@string/title_activity_settings"
+        android:onClick="openSettingsActivity"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:tint="@color/accent"
+        app:srcCompat="@drawable/settings" />
+
+</LinearLayout>

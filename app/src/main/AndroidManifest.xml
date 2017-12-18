@@ -1,22 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.Leexy.app"
-    android:installLocation="auto" >
+    android:installLocation="auto">
 
     <uses-feature android:name="android.hardware.camera" />
 
     <uses-permission android:name="android.permission.CAMERA" />
-
-    <uses-permission android:name="android.permission.CALL_PHONE"></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
         android:fullBackupContent="false"
         android:hardwareAccelerated="true"
-        android:icon="@drawable/icon"
-        android:label="LeexyApp"
-        android:supportsRtl = "true"
-        android:theme="@style/Theme.AppCompat" >
+        android:icon="@mipmap/ic_launcher"
+        android:label="Leexy"
+        android:supportsRtl="true"
+        android:theme="@style/LeexyLightAppCompat">
         <meta-data
             android:name="com.Leexy.app.version"
             android:value="@integer/google_play_services_version" />
@@ -24,12 +25,44 @@
             android:name="com.Leexy.app.DEPENDENCIES"
             android:value="ocr" />
 
-        <activity android:name="com.Leexy.app.OcrCaptureActivity"
-            android:label="Leexy App">
+        <activity
+            android:name=".OcrCaptureActivity"
+            android:label="Leexy">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name="com.mopub.mobileads.MoPubActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name="com.mopub.mobileads.MraidActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name="com.mopub.common.MoPubBrowser"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name="com.mopub.mobileads.MraidVideoPlayerActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name="com.google.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+        <activity
+            android:name="com.millennialmedia.android.MMActivity"
+            android:configChanges="keyboardHidden|orientation|keyboard"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.millennialmedia.android.VideoPlayer"
+            android:configChanges="keyboardHidden|orientation|keyboard" />
+        <activity
+            android:name=".SettingsActivity"
+            android:parentActivityName=".OcrCaptureActivity" >
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".OcrCaptureActivity" />
         </activity>
     </application>
 

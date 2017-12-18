@@ -27,21 +27,25 @@ import android.content.IntentFilter;
 import android.content.pm.PackageManager;
 import android.hardware.Camera;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
-import android.speech.tts.TextToSpeech;
 import android.support.annotation.NonNull;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.telephony.TelephonyManager;
+import android.text.InputType;
 import android.util.Log;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.ScaleGestureDetector;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import com.Leexy.app.ui.camera.GraphicOverlay;
+
+import com.akexorcist.localizationactivity.ui.LocalizationActivity;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GoogleApiAvailability;
 import com.Leexy.app.ui.camera.CameraSource;
@@ -49,9 +53,10 @@ import com.Leexy.app.ui.camera.CameraSourcePreview;
 
 import com.google.android.gms.vision.text.TextBlock;
 import com.google.android.gms.vision.text.TextRecognizer;
+import com.mopub.mobileads.MoPubErrorCode;
+import com.mopub.mobileads.MoPubView;
 
 import java.io.IOException;
-import java.util.Locale;
 import java.util.regex.Pattern;
 
 /**
@@ -59,7 +64,7 @@ import java.util.regex.Pattern;
  * rear facing camera. During detection overlay graphics are drawn to indicate the position,
  * size, and contents of each TextBlock.
  */
-public final class OcrCaptureActivity extends AppCompatActivity {
+public final class OcrCaptureActivity extends LocalizationActivity implements MoPubView.BannerAdListener {
     private static final String TAG = "OcrCaptureActivity";
 
     // Intent request code to handle updating play services if needed.
@@ -67,7 +72,8 @@ public final class OcrCaptureActivity extends AppCompatActivity {
 
     // Permission request codes need to be < 256
     private static final int RC_HANDLE_CAMERA_PERM = 2;
-    private static final int CALL_PERM =111;
+    private static final int CALL_PERM = 111;
+    private static final int CALL_CAMERA_PERMISSIONS = 3;
     // Constants used to pass extra data in the intent
     public static final String AutoFocus = "AutoFocus";
     public static final String UseFlash = "UseFlash";
@@ -81,9 +87,8 @@ public final class OcrCaptureActivity extends AppCompatActivity {
     private ScaleGestureDetector scaleGestureDetector;
     private GestureDetector gestureDetector;
 
-    // A TextToSpeech engine for speaking a String value.
-    private TextToSpeech tts;
-
+    //Ads
+    private MoPubView moPubView;
     /**
      * Initializes the UI and creates the detector pipeline.
      */
@@ -92,6 +97,15 @@ public final class OcrCaptureActivity extends AppCompatActivity {
         super.onCreate(bundle);
         setContentView(R.layout.ocr_capture);
 
+
+        //Ads
+        moPubView = (MoPubView) findViewById(R.id.adview);
+        moPubView.setAdUnitId("e5bbfb06ad124fa891ae5bbe8427a836");
+        moPubView.loadAd();
+        moPubView.setBannerAdListener(this);
+
+
+        //Camera
         mPreview = (CameraSourcePreview) findViewById(R.id.preview);
         mGraphicOverlay = (GraphicOverlay<OcrGraphic>) findViewById(R.id.graphicOverlay);
 
@@ -99,87 +113,80 @@ public final class OcrCaptureActivity extends AppCompatActivity {
         boolean autoFocus = true;
         boolean useFlash = false;
 
-        // Check for the camera permission before accessing the camera.  If the
-        // permission is not granted yet, request permission.
-        int cameraPermissionState = ActivityCompat.checkSelfPermission(this, Manifest.permission.CAMERA);
-        if (cameraPermissionState == PackageManager.PERMISSION_GRANTED) {
-            Log.d("OnCreate", "Camera Permission granted creating CameraSource and checking phone permissions");
+        //Permissions
+        String[] PERMISSIONS = {Manifest.permission.CALL_PHONE, Manifest.permission.CAMERA};
+
+        if(!hasPermissions(this, PERMISSIONS)){
+            ActivityCompat.requestPermissions(this, PERMISSIONS, CALL_CAMERA_PERMISSIONS);
+        }
+        else {
             createCameraSource(autoFocus, useFlash);
-
-            int phonePermissionState = ActivityCompat.checkSelfPermission(this, Manifest.permission.CALL_PHONE);
-            if (phonePermissionState != PackageManager.PERMISSION_GRANTED) {
-                Log.d("OnCreateCameraON", "Phone Permission not granted, requesting");
-                requestPhonePermission();
-            }
-
-        } else {
-            Log.d("OnCreate", "Camera Permission not granted, requesting");
-            requestCameraPermission();
-            int phonePermissionState = ActivityCompat.checkSelfPermission(this, Manifest.permission.CALL_PHONE);
-            if (phonePermissionState != PackageManager.PERMISSION_GRANTED) {
-                Log.d("OnCreateCameraOFF", "Phone Permission not granted, requesting");
-                requestPhonePermission();
-            }
         }
 
+        // Check for the camera permission before accessing the camera.  If the
+        // permission is not granted yet, request permission.
+//        int cameraPermissionState = ActivityCompat.checkSelfPermission(this, Manifest.permission.CAMERA);
+//        if (cameraPermissionState == PackageManager.PERMISSION_GRANTED) {
+//            Log.d(TAG, "OnCreate: Camera Permission already granted, Creating camera source andChecking for phone permission");
+//            createCameraSource(autoFocus, useFlash);
+//
+//            int phonePermissionState = ActivityCompat.checkSelfPermission(this, Manifest.permission.CALL_PHONE);
+//            if (phonePermissionState != PackageManager.PERMISSION_GRANTED) {
+//                Log.d(TAG, "OnCreateCameraON: Phone Permission not granted, requesting");
+//                requestPhonePermission();
+//            }
+//
+//        } else {
+//            Log.d(TAG, "OnCreate: Camera Permission not granted creating CameraSource and checking phone permissions");
+//            requestCameraPermission();
+//            int phonePermissionState = ActivityCompat.checkSelfPermission(this, Manifest.permission.CALL_PHONE);
+//            if (phonePermissionState != PackageManager.PERMISSION_GRANTED) {
+//                Log.d(TAG, "OnCreateCameraOFF: Phone Permission not granted, requesting");
+//                requestPhonePermission();
+//            }
+//        }
 
 
         gestureDetector = new GestureDetector(this, new CaptureGestureListener());
         scaleGestureDetector = new ScaleGestureDetector(this, new ScaleListener());
 
-        Snackbar.make(mGraphicOverlay, "Tap to Speak. Pinch/Stretch to zoom",
-                Snackbar.LENGTH_LONG)
-                .show();
+        final Snackbar snackbar = Snackbar.make(mGraphicOverlay, R.string.Tap_rectangle_to_refill_your_account,
+                Snackbar.LENGTH_INDEFINITE);
+        snackbar.setAction(R.string.Dismiss, new View.OnClickListener() {
+            @Override
+            public void onClick(View v){
+                snackbar.dismiss();
+            }
+        });
+        snackbar.show();
 
-        // Set up the Text To Speech engine.
-        TextToSpeech.OnInitListener listener =
-                new TextToSpeech.OnInitListener() {
-                    @Override
-                    public void onInit(final int status) {
-                        if (status == TextToSpeech.SUCCESS) {
-                            Log.d("OnInitListener", "Text to speech engine started successfully.");
-                            tts.setLanguage(Locale.US);
-                        } else {
-                            Log.d("OnInitListener", "Error starting the text to speech engine.");
-                        }
-                    }
-                };
-        tts = new TextToSpeech(this.getApplicationContext(), listener);
+    }
+
+    public void openSettingsActivity(View view) {
+        Intent intent = new Intent(this, SettingsActivity.class);
+        startActivity(intent);
     }
 
     /**
-     * Handles the requesting of the camera permission.  This includes
+     * Checks for permissions
+     */
+    public static boolean hasPermissions(Context context, String... permissions) {
+        if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.M && context != null && permissions != null) {
+            for (String permission : permissions) {
+                if (ActivityCompat.checkSelfPermission(context, permission) != PackageManager.PERMISSION_GRANTED) {
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+
+
+    /**
+     * Handles the requesting of the Phome permission.  This includes
      * showing a "Snackbar" message of why the permission is needed then
      * sending the request.
      */
-
-    private void requestCameraPermission() {
-        Log.w(TAG, "Camera permission is not granted. Requesting permission");
-
-        final String[] permissions = new String[]{Manifest.permission.CAMERA};
-
-        if (!ActivityCompat.shouldShowRequestPermissionRationale(this,
-                Manifest.permission.CAMERA)) {
-            ActivityCompat.requestPermissions(this, permissions, RC_HANDLE_CAMERA_PERM);
-            return;
-        }
-
-        final Activity thisActivity = this;
-
-        View.OnClickListener listener = new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                ActivityCompat.requestPermissions(thisActivity, permissions,
-                        RC_HANDLE_CAMERA_PERM);
-            }
-        };
-
-        Snackbar.make(mGraphicOverlay, R.string.permission_camera_rationale,
-                Snackbar.LENGTH_INDEFINITE)
-                .setAction(R.string.ok, listener)
-                .show();
-    }
-    //TODO add Javadoc
     private void requestPhonePermission() {
         Log.w(TAG, " Call permission is not granted. Requesting permission");
 
@@ -201,10 +208,122 @@ public final class OcrCaptureActivity extends AppCompatActivity {
             }
         };
 
-        Snackbar.make(mGraphicOverlay, "Call permission is necessary!",
+        Snackbar.make(mGraphicOverlay, R.string.Call_permission_is_necessary,
                 Snackbar.LENGTH_INDEFINITE)
                 .setAction(R.string.ok, listener)
                 .show();
+    }
+
+
+    /**
+     * Callback for the result from requesting permissions. This method
+     * is invoked for every call on {@link #requestPermissions(String[], int)}.
+     * <p>
+     * <strong>Note:</strong> It is possible that the permissions request interaction
+     * with the user is interrupted. In this case you will receive empty permissions
+     * and results arrays which should be treated as a cancellation.
+     * </p>
+     *
+     * @param requestCode  The request code passed in {@link #requestPermissions(String[], int)}.
+     * @param permissions  The requested permissions. Never null.
+     * @param grantResults The grant results for the corresponding permissions
+     *                     which is either {@link PackageManager#PERMISSION_GRANTED}
+     *                     or {@link PackageManager#PERMISSION_DENIED}. Never null.
+     * @see #requestPermissions(String[], int)
+     */
+    @Override
+    public void onRequestPermissionsResult(int requestCode,
+                                           @NonNull String[] permissions,
+                                           @NonNull int[] grantResults) {
+
+        switch (requestCode) {
+            case CALL_PERM: {
+                if (grantResults.length != 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+
+                    // permissions were granted, yay!
+
+
+                } else {
+
+                    DialogInterface.OnClickListener listener = new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int id) {
+                            finish();
+
+                        }
+                    };
+
+                    AlertDialog.Builder builder = new AlertDialog.Builder(this);
+                    builder.setTitle(R.string.permissions_needed_title)
+                            .setMessage(R.string.permissions_notgranted)
+                            .setPositiveButton(R.string.ok, listener)
+                            .show();
+
+                }
+                return;
+            }
+
+            case RC_HANDLE_CAMERA_PERM: {
+
+                if (grantResults.length != 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                    Log.d(TAG, "Camera permission granted - initialize the camera source");
+                    // we have permission, so create the camerasource
+                    boolean autoFocus = getIntent().getBooleanExtra(AutoFocus, false);
+                    boolean useFlash = getIntent().getBooleanExtra(UseFlash, false);
+                    createCameraSource(autoFocus, useFlash);
+                    return;
+                }
+
+                Log.e(TAG, "Permission not granted: results len = " + grantResults.length +
+                        " Result code = " + (grantResults.length > 0 ? grantResults[0] : "(empty)"));
+
+                DialogInterface.OnClickListener listener = new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        finish();
+                    }
+                };
+
+                AlertDialog.Builder builder = new AlertDialog.Builder(this);
+                builder.setTitle(R.string.permissions_needed_title)
+                        .setMessage(R.string.permissions_notgranted)
+                        .setPositiveButton(R.string.ok, listener)
+                        .show();
+
+            }
+            case CALL_CAMERA_PERMISSIONS:{
+                if (grantResults.length != 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                    Log.d(TAG, "Camera permission granted - initialize the camera source");
+                    // we have permission, so create the camerasource
+                    boolean autoFocus = getIntent().getBooleanExtra(AutoFocus, false);
+                    boolean useFlash = getIntent().getBooleanExtra(UseFlash, false);
+                    createCameraSource(autoFocus, useFlash);
+                    return;
+                }
+
+                Log.e(TAG, "Permission not granted: results len = " + grantResults.length +
+                        " Result code = " + (grantResults.length > 0 ? grantResults[0] : "(empty)"));
+
+                DialogInterface.OnClickListener listener = new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        finish();
+                    }
+                };
+
+                AlertDialog.Builder builder = new AlertDialog.Builder(this);
+                builder.setTitle(R.string.permissions_needed_title)
+                        .setMessage(R.string.permissions_notgranted)
+                        .setPositiveButton(R.string.ok, listener)
+                        .show();
+            }
+            default: {
+                Log.d(TAG, "Got unexpected permission result: " + requestCode);
+                super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+                return;
+            }
+
+
+        }
+
+
     }
 
     @Override
@@ -220,7 +339,7 @@ public final class OcrCaptureActivity extends AppCompatActivity {
      * Creates and starts the camera.  Note that this uses a higher resolution in comparison
      * to other detection examples to enable the ocr detector to detect small text samples
      * at long distances.
-     *
+     * <p>
      * Suppressing InlinedApi since there is a check that the minimum version is met before using
      * the constant.
      */
@@ -274,8 +393,10 @@ public final class OcrCaptureActivity extends AppCompatActivity {
      * Restarts the camera.
      */
     @Override
-    protected void onResume() {
+    public void onResume() {
+
         super.onResume();
+        Log.d(TAG, "ON RESUME.");
         startCameraSource();
     }
 
@@ -285,7 +406,9 @@ public final class OcrCaptureActivity extends AppCompatActivity {
     @Override
     protected void onPause() {
         super.onPause();
+        Log.d(TAG, "ON PAUSE.");
         if (mPreview != null) {
+            Log.d(TAG, "ON PAUSE mPreview isn't stopped.");
             mPreview.stop();
         }
     }
@@ -296,100 +419,15 @@ public final class OcrCaptureActivity extends AppCompatActivity {
      */
     @Override
     protected void onDestroy() {
+
+        moPubView.destroy();
         super.onDestroy();
         if (mPreview != null) {
             mPreview.release();
         }
     }
 
-    //TODO Modify next Javadoc
-    /**
-     * Callback for the result from requesting permissions. This method
-     * is invoked for every call on {@link #requestPermissions(String[], int)}.
-     * <p>
-     * <strong>Note:</strong> It is possible that the permissions request interaction
-     * with the user is interrupted. In this case you will receive empty permissions
-     * and results arrays which should be treated as a cancellation.
-     * </p>
-     *
-     * @param requestCode  The request code passed in {@link #requestPermissions(String[], int)}.
-     * @param permissions  The requested permissions. Never null.
-     * @param grantResults The grant results for the corresponding permissions
-     *                     which is either {@link PackageManager#PERMISSION_GRANTED}
-     *                     or {@link PackageManager#PERMISSION_DENIED}. Never null.
-     * @see #requestPermissions(String[], int)
-     */
-    @Override
-    public void onRequestPermissionsResult(int requestCode,
-                                           @NonNull String[] permissions,
-                                           @NonNull int[] grantResults) {
 
-        switch (requestCode) {
-            case CALL_PERM: {
-                if ( grantResults.length != 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-
-                    // permission was granted, yay!
-
-
-                } else {
-
-                    DialogInterface.OnClickListener listener = new DialogInterface.OnClickListener() {
-                        public void onClick(DialogInterface dialog, int id) {
-                            finish();
-
-                        }
-                    };
-
-                    AlertDialog.Builder builder = new AlertDialog.Builder(this);
-                    builder.setTitle("Call ")
-                            .setMessage("Permission for make call not granted ")
-                            .setPositiveButton(R.string.ok, listener)
-                            .show();
-
-                }
-                return;
-            }
-
-            case RC_HANDLE_CAMERA_PERM:{
-
-                if (grantResults.length != 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                    Log.d(TAG, "Camera permission granted - initialize the camera source");
-                    // we have permission, so create the camerasource
-                    boolean autoFocus = getIntent().getBooleanExtra(AutoFocus, false);
-                    boolean useFlash = getIntent().getBooleanExtra(UseFlash, false);
-                    createCameraSource(autoFocus, useFlash);
-                    return;
-                }
-
-                Log.e(TAG, "Permission not granted: results len = " + grantResults.length +
-                        " Result code = " + (grantResults.length > 0 ? grantResults[0] : "(empty)"));
-
-                DialogInterface.OnClickListener listener = new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int id) {
-                        finish();
-                    }
-                };
-
-                AlertDialog.Builder builder = new AlertDialog.Builder(this);
-                builder.setTitle("Multitracker sample")
-                        .setMessage(R.string.no_camera_permission)
-                        .setPositiveButton(R.string.ok, listener)
-                        .show();
-
-            }
-            default:{
-                Log.d(TAG, "Got unexpected permission result: " + requestCode);
-                super.onRequestPermissionsResult(requestCode, permissions, grantResults);
-                return;
-            }
-
-
-        }
-
-
-
-
-    }
 
     /**
      * Starts or restarts the camera source, if it exists.  If the camera source doesn't exist yet
@@ -431,76 +469,137 @@ public final class OcrCaptureActivity extends AppCompatActivity {
 
         if (graphic != null) {
             text = graphic.getTextBlock();
-            if (text != null && text.getValue() != null) {
+            String textValue = text.getValue();
+            textValue= textValue.replaceAll("\\s","");
+            if (text != null && textValue != null) {
                 boolean textIsValidRechargeCode = Pattern.matches("\\d{14}", text.getValue());
-                if (textIsValidRechargeCode){
-                    callOperatorService(text);
+                if (textIsValidRechargeCode) {
+                    showConfirmationDialog(textValue);
+                } else {
+
+                    Snackbar.make(mGraphicOverlay, R.string.Detected_text_isntrefillcode,
+                            Snackbar.LENGTH_LONG)
+                            .show();
+                    Log.d(TAG, "REGEX: Detected text isn't a Refill code");
                 }
-                else{
-                    Log.d("REGEX","Detected text isn't a recharge code");
-                }
-            }
-            else {
+            } else {
                 Log.d(TAG, "text data is null");
             }
-        }
-        else {
-            Log.d(TAG,"no text detected");
+        } else {
+            Log.d(TAG, "no text detected");
         }
         return text != null;
     }
 
-    //TODO add Javadoc
-    void  callOperatorService(TextBlock text){
-        //TODO Clean the following code
-        String textValue = text.getValue();
+    /***/
+    private void showConfirmationDialog(String refillCode){
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle(R.string.confirm_correct_refill_code_dialog);
+
+        // Set up the input
+        final EditText input = new EditText(this);
+        // Specify the type of input expected; this, for example, sets the input as a password, and will mask the text
+        input.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_CLASS_NUMBER);
+        input.setText(refillCode);
+        builder.setView(input);
+
+        // Set up the buttons
+        builder.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                String confirmedCode= input.getText().toString();
+                callOperatorService(confirmedCode);
+            }
+        });
+        builder.setNegativeButton(R.string.Cancel, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.cancel();
+            }
+        });
+
+        builder.show();
+    }
+    private void callOperatorService(String rawUniqueRefillCode) {
+
 
         TelephonyManager telephonyManager = (TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE);
         String simOperatorName = telephonyManager.getSimOperatorName();
-        switch (simOperatorName){
-            case "mobilis" : {
-                textValue = "*111*" + textValue + "#";
-                Snackbar.make(mGraphicOverlay, "Mobilis Detected",
-                        Snackbar.LENGTH_LONG)
-                        .show();
-                Log.d("OPER", "MOBILIS DETECTED");
+        String fullUssdCallCode;
+        switch (simOperatorName) {
+            case AppConfig.OPERATOR1: { //mobilis
+                fullUssdCallCode = AppConfig.OPERATOR1_USSD_REFILL + rawUniqueRefillCode + "#";
+                Log.d(TAG, "OPER: MOBILIS DETECTED");
+                commitCallIntent(fullUssdCallCode);
                 break;
             }
-            case "ooredoo" : {
-                textValue ="*200*" +  textValue + "#";
-                Log.d("OPER", "OOREDOO DETECTED");
+            case AppConfig.OPERATOR2: { //ooredoo
+                fullUssdCallCode = AppConfig.OPERATOR2_USSD_REFILL + rawUniqueRefillCode + "#";
+                Log.d(TAG, "OPER: OOREDOO DETECTED");
+                commitCallIntent(fullUssdCallCode);
                 break;
             }
-            case "djezzy" : {
-                textValue ="*700*" +  textValue + "#";
-                Log.d("OPER", "DJEZZY DETECTED");
+            case AppConfig.OPERATOR3: {
+                fullUssdCallCode = AppConfig.OPERATOR3_USSD_REFILL + rawUniqueRefillCode + "#";
+                Log.d(TAG, "OPER: DJEZZY DETECTED");
+                commitCallIntent(fullUssdCallCode);
                 break;
             }
             default: {
-                Log.d("OPER", "no operator detected" + simOperatorName);
-                Snackbar.make(mGraphicOverlay, "no operator detected",
+                Log.d(TAG, "OPER no valid operator detected" + simOperatorName);
+                Snackbar.make(mGraphicOverlay, R.string.No_valid_operator_detected,
                         Snackbar.LENGTH_LONG)
                         .show();
                 break;
             }
         }
-        Log.d("------------operateur", simOperatorName);
+        Log.d(TAG, "------------operateur : "+ simOperatorName);
+
+    }
+
+    private void commitCallIntent(String fullUssdCallCode) {
+        Log.d(TAG, "fullUssdCallCode" + fullUssdCallCode);
+
         Intent callIntent = new Intent(Intent.ACTION_CALL);
-        Log.d("TEXTVALUE",textValue);
-        callIntent.setData(Uri.parse("tel:"+ Uri.encode(textValue)));
+        callIntent.setData(Uri.parse("tel:" + Uri.encode(fullUssdCallCode)));
         callIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
 
-            Log.e(TAG, "Permission");
+            Log.e(TAG, "Permission not granted on commitCallIntent");
 
             requestPhonePermission();
             //requestPermissions(new String[]{Manifest.permission.CALL_PHONE}, CALL_PERM);
-           // return;
+            // return;
 
-        }else{
-        startActivity(callIntent);
+        } else {
+            startActivity(callIntent);
         }
+    }
+
+    @Override
+    public void onBannerLoaded(MoPubView banner) {
+
+    }
+
+    @Override
+    public void onBannerFailed(MoPubView banner, MoPubErrorCode errorCode) {
+
+    }
+
+    @Override
+    public void onBannerClicked(MoPubView banner) {
+
+    }
+
+    @Override
+    public void onBannerExpanded(MoPubView banner) {
+
+    }
+
+    @Override
+    public void onBannerCollapsed(MoPubView banner) {
+
     }
 
 
@@ -512,6 +611,8 @@ public final class OcrCaptureActivity extends AppCompatActivity {
             return onTap(e.getRawX(), e.getRawY()) || super.onSingleTapConfirmed(e);
         }
     }
+
+
 
     private class ScaleListener implements ScaleGestureDetector.OnScaleGestureListener {
 
@@ -569,3 +670,5 @@ public final class OcrCaptureActivity extends AppCompatActivity {
         }
     }
 }
+
+

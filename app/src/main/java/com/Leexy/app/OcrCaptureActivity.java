@@ -472,7 +472,7 @@ public final class OcrCaptureActivity extends LocalizationActivity implements Mo
             String textValue = text.getValue();
             textValue= textValue.replaceAll("\\s","");
             if (text != null && textValue != null) {
-                boolean textIsValidRechargeCode = Pattern.matches("\\d{14}", text.getValue());
+                boolean textIsValidRechargeCode = Pattern.matches("[0-9]+[0-9 \\t]+", text.getValue());
                 if (textIsValidRechargeCode) {
                     showConfirmationDialog(textValue);
                 } else {

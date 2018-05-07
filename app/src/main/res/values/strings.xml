@@ -17,5 +17,8 @@
     <string name="privacy_policy">Read our &lt;a href=https://docs.google.com/document/d/e/2PACX-1vSsVQxjQeJa36nNUdL8VioEj-SsBBAK-3COzfknjRY2lSl6uI5IeeIVs-D5DR0HqjhvyJczyIUnqj69/pub>Privacy Policy&lt;/a></string>
     <string name="email">Email</string>
 
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 
 </resources>

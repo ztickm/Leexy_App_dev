@@ -14,6 +14,6 @@
     <string name="title_activity_main">ليكسي</string>
     <string name="low_storage_error">لا يمكن تحميل مواد الكشف عن النصوص بسبب انخفاض ذاكرة الجهاز</string>
     <string name="languages">إختيار اللغة</string>
-    <string name="privacy_policy"><a href= https://docs.google.com/document/d/e/2PACX-1vSsVQxjQeJa36nNUdL8VioEj-SsBBAK-3COzfknjRY2lSl6uI5IeeIVs-D5DR0HqjhvyJczyIUnqj69/pub>قراءة سياسة الخصوصية</a>
-    <string name="email">البريد الإلكتروني</string>
+    <string name="privacy_policy"><a href= "https://docs.google.com/document/d/e/2PACX-1vSsVQxjQeJa36nNUdL8VioEj-SsBBAK-3COzfknjRY2lSl6uI5IeeIVs-D5DR0HqjhvyJczyIUnqj69/pub">قراءة سياسة الخصوصية</a></string>
+    <string name="email">البريد الإلكترونيstring></string>
 </resources>

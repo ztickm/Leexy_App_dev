@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.ManualCodeFragment"
+    android:background="@drawable/app_background">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/app_logo"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/text_layout_input_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_centerInParent="true"
+        android:textColorHint="@android:color/white"
+        android:backgroundTint="@android:color/white"
+        app:counterMaxLength="14"
+        app:counterEnabled="true"
+        app:hintAnimationEnabled="true"
+        app:hintTextAppearance="@style/Base.TextAppearance.AppCompat.Small">
+        <EditText
+            android:id="@+id/edit_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="Saisir votre code"
+            android:maxLength="14"/>
+    </android.support.design.widget.TextInputLayout>
+
+</RelativeLayout>

@@ -7,6 +7,7 @@
 
     <color name="primary">#E91E63</color>
 
+
     <color name="primary_material_light">#E91E63</color>
     <color name="primary_dark">#C2185B</color>
     <color name="primary_light">#F8BBD0</color>
@@ -16,4 +17,9 @@
     <color name="secondary_text">#757575</color>
     <color name="icons">#FFFFFF</color>
     <color name="divider">#BDBDBD</color>
+
+    <color name="color_gradient_start">#880e4f</color>
+    <color name="color_gradient_end">#673ab7</color>
+    <color name="color_gradient_center">#9c27b0</color>
+    <color name="color_success">#4CAF50</color>
 </resources>

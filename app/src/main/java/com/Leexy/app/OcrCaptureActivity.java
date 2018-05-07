@@ -99,10 +99,10 @@ public final class OcrCaptureActivity extends LocalizationActivity implements Mo
 
 
         //Ads
-        moPubView = (MoPubView) findViewById(R.id.adview);
-        moPubView.setAdUnitId("e5bbfb06ad124fa891ae5bbe8427a836");
-        moPubView.loadAd();
-        moPubView.setBannerAdListener(this);
+//        moPubView = (MoPubView) findViewById(R.id.adview);
+//        moPubView.setAdUnitId("e5bbfb06ad124fa891ae5bbe8427a836");
+//        moPubView.loadAd();
+//        moPubView.setBannerAdListener(this);
 
 
         //Camera
@@ -183,12 +183,12 @@ public final class OcrCaptureActivity extends LocalizationActivity implements Mo
 
 
     /**
-     * Handles the requesting of the Phome permission.  This includes
+     * Handles the requesting of the Phone permission.  This includes
      * showing a "Snackbar" message of why the permission is needed then
      * sending the request.
      */
     private void requestPhonePermission() {
-        Log.w(TAG, " Call permission is not granted. Requesting permission");
+        Log.w(TAG, " Call permission is not granted yet. Requesting permission");
 
         final String[] permissions = new String[]{Manifest.permission.CALL_PHONE};
 
@@ -231,6 +231,8 @@ public final class OcrCaptureActivity extends LocalizationActivity implements Mo
      *                     or {@link PackageManager#PERMISSION_DENIED}. Never null.
      * @see #requestPermissions(String[], int)
      */
+
+    //TODO: this method is too big, break it up
     @Override
     public void onRequestPermissionsResult(int requestCode,
                                            @NonNull String[] permissions,
@@ -238,12 +240,7 @@ public final class OcrCaptureActivity extends LocalizationActivity implements Mo
 
         switch (requestCode) {
             case CALL_PERM: {
-                if (grantResults.length != 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-
-                    // permissions were granted, yay!
-
-
-                } else {
+                if (grantResults.length == 0 || grantResults[0] != PackageManager.PERMISSION_GRANTED) {
 
                     DialogInterface.OnClickListener listener = new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int id) {
@@ -258,8 +255,13 @@ public final class OcrCaptureActivity extends LocalizationActivity implements Mo
                             .setPositiveButton(R.string.ok, listener)
                             .show();
 
+                } else {
+
+                    // permissions were granted
+                    return;
+
+
                 }
-                return;
             }
 
             case RC_HANDLE_CAMERA_PERM: {
@@ -420,7 +422,7 @@ public final class OcrCaptureActivity extends LocalizationActivity implements Mo
     @Override
     protected void onDestroy() {
 
-        moPubView.destroy();
+//        moPubView.destroy();
         super.onDestroy();
         if (mPreview != null) {
             mPreview.release();
@@ -491,14 +493,14 @@ public final class OcrCaptureActivity extends LocalizationActivity implements Mo
         return text != null;
     }
 
-    /***/
+    //TODO: move this to new class
     private void showConfirmationDialog(String refillCode){
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle(R.string.confirm_correct_refill_code_dialog);
 
         // Set up the input
         final EditText input = new EditText(this);
-        // Specify the type of input expected; this, for example, sets the input as a password, and will mask the text
+
         input.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_CLASS_NUMBER);
         input.setText(refillCode);
         builder.setView(input);
@@ -520,6 +522,7 @@ public final class OcrCaptureActivity extends LocalizationActivity implements Mo
 
         builder.show();
     }
+    //TODO: move this to new class
     private void callOperatorService(String rawUniqueRefillCode) {
 
 
@@ -539,7 +542,7 @@ public final class OcrCaptureActivity extends LocalizationActivity implements Mo
                 commitCallIntent(fullUssdCallCode);
                 break;
             }
-            case AppConfig.OPERATOR3: {
+            case AppConfig.OPERATOR3: {//djezzy
                 fullUssdCallCode = AppConfig.OPERATOR3_USSD_REFILL + rawUniqueRefillCode + "#";
                 Log.d(TAG, "OPER: DJEZZY DETECTED");
                 commitCallIntent(fullUssdCallCode);
@@ -556,7 +559,7 @@ public final class OcrCaptureActivity extends LocalizationActivity implements Mo
         Log.d(TAG, "------------operateur : "+ simOperatorName);
 
     }
-
+//TODO: move this to new class
     private void commitCallIntent(String fullUssdCallCode) {
         Log.d(TAG, "fullUssdCallCode" + fullUssdCallCode);
 

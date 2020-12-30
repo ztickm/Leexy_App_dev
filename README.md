@@ -3,8 +3,8 @@ An app to scan prepaid mobile vouchers and refill accounts automatically, built 
 
 # License
 Be sure to read the license.md before using this software, and before pulling this repo and editing the code.  
-(it basically says: distribute any code based on this repo as a non GNU GPLv3 software, and I will sue you) 
+https://tldrlegal.com/license/gnu-general-public-license-v3-(gpl-3) 
 
 # Status
-I have abandoned this project a long time ago; for now, I have no interest in maintaining it or contributing to its code.  
+I have abandoned this project a long time ago; for now, I have no interest in maintaining it or contributing to its code anytime soon.  
 If you're interested in taking over, please contact me.
